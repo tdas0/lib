@@ -1,7 +1,16 @@
+/**
+ * Author: Matheus Leal
+ * Date: 2020-01-15
+ * Description: Achar um Euler TOur
+ * Time: O(N + M)
+ * Usage: 
+ * Status:tested
+ */
+
 /*
-  grafo[x] guarda um pair <v, w> indicando que uma aresta liga (x, v) e possui id = w
-  g[x] = grau do vértice x
-  tour = ciclo do tipo [começo] ... [começo]
+  grafo[x] guarda um pair (v, w) indicando que uma aresta liga (x, v) e possui id = w
+  g[x] = grau do vertice x
+  tour = ciclo do tipo [comeco] ... [comeco]
   del[x] = (1, se aresta ja foi utilizada. 0 caso contrário)
 */
 

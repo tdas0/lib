@@ -2,7 +2,7 @@
 
 
 ## 2019 ICPC Latin American Regional
-| Problem  | Contents | M | N | T |
+| Problem  | Contents | N | M | T |
 | --- | --- | --- | --- | --- |
 | A  | Dilworth + matching bipartido |:white_check_mark:|:white_check_mark:|:heavy_check_mark:|
 | B  | Geometria |:white_check_mark:|:white_check_mark:|:white_check_mark:|

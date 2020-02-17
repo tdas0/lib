@@ -2,8 +2,8 @@
 
 
 ## 2019 ICPC Latin American Regional
-| Problem  | Contents |
-| --- | --- |
+| Problem  | Contents | M | N | T |
+| --- | --- | --- | --- | --- |
 | A  | Dilworth + matching bipartido |
 | B  | Geometria |
 | C  | Sparse table + segtree + binserch |

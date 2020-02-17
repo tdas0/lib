@@ -1,4 +1,4 @@
-#ICPC Latin American Regionals
+# ICPC Latin American Regionals
 
 
 ## 2019 ICPC Latin American Regional

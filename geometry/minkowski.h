@@ -16,6 +16,8 @@ vector<P> minkowski(const vector<P> &A ,const vector<P> &B){
 	e.push_back(A[0] + B[0]);
 	int i = 0 , j = 0 ;
 	auto comp = [&](P a , P b){
+		int hp1 = (a.x < 0 || (a.x == 0 && a.y < 0)) , hp2 = (b.x < 0 || (b.x == 0 && b.y < 0));
+		if(hp1 != hp2) return hp1 < hp2;
 		if(a.cross(b) != 0){
 			return a.cross(b)  > 0;
 		}

@@ -17,6 +17,8 @@ vector<P> convexHull(vector<P> pts) {
 	rep(i,0,sz(pts)) pivot = min(pivot , pts[i]);
 	sort(all(pts) , [&](P a , P b){
 		a = a - pivot , b = b - pivot;
+		int hp1 = (a.x < 0 || (a.x == 0 && a.y < 0)) , hp2 = (b.x < 0 || (b.x == 0 && b.y < 0));
+		if(hp1 != hp2) return hp1 < hp2;
 		if(a.cross(b) != 0){
 			return a.cross(b)  > 0;
 		}

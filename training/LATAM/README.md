@@ -9,11 +9,11 @@
 | C  | Sparse table + segtree + binserch |:white_check_mark:|:white_check_mark:|:white_check_mark:|
 | D  | Geometria |:white_check_mark:|:white_check_mark:|:heavy_check_mark:|
 | E  | two-pointers básico |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-| F  | prog dinâmica |:white_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-| G  | Estrutura de suffixos (automaton) |:white_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
+| F  | prog dinâmica |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
+| G  | Estrutura de suffixos (automaton) |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
 | H  | prog dinâmica |:white_check_mark:|:white_check_mark:|:white_check_mark:|
 | I  | toposort |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
 | J  | estrutura de dados + adhoc |:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| K  | multiplicaçao polinomial + math |:white_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-| L  | dp básica |:white_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
+| K  | multiplicaçao polinomial + math |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
+| L  | dp básica |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
 | M  | implementaçao |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|

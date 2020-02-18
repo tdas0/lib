@@ -14,6 +14,6 @@
 | H  | basico |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
 | I  | floydwarshall |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
 | J  | implementação |:white_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-| K  | math |:heavy_check_mark:|:heavy_check_mark:|:white_check_mark:|
+| K  | math |:white_check_mark:|:heavy_check_mark:|:white_check_mark:|
 | L  | teorema de lucas |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
 | M  | busca binária |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|

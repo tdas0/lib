@@ -1,7 +1,7 @@
 /**
  * Author: Tiago Domingos
  * Date: 2020-02-21
- * Description: Cria uma arvore isometrica com |K|log(|K|) nós
+ * Description: Cria uma arvore isometrica com O(|K|) nós
  * Time: O(Klog(K))
  * Usage: mandar o conjunto de nós que a arvore tem que ter, e implementar uma função
  * lca(x,y) e dist(x,y)

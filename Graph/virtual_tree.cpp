@@ -10,9 +10,7 @@
 
 
 
-struct edge{
-	int x , y , z;
-}
+#include "graph.cpp"
 
 pair<vector<edge> ,int> build_virtual_tree(vi K){
 	auto f = [&](int a , int b){

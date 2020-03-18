@@ -76,7 +76,7 @@ void make_block_cut(){
 // begin of circle-square-tree
 // parecido com BCC, liga BLOCK == n + bcc(i) com todo mundo em bcc(i)
 // arvore facil pra d&c, mas pode ser facilmente substituida por uma block cut?? 
-// transforma a arvore em uma flor ????????????????/
+// transforma a arvore em uma flor ????????????????
 // end of circle-square-tree
 
 

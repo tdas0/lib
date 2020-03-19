@@ -1,5 +1,5 @@
 /**
- * Author: Matheus Leal
+ * Author: Naim
  * Date: 2020-03-19
  * Description: Acha o tamanho do maior palindromo de tamanho par/impar começando em i;
  * d1 -> tamanho impar - d1[i] = x significa que ele tem tamanho 2x -1 com centro em "i"

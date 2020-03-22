@@ -86,13 +86,20 @@ void cst(int x , int p = -1){
 	ans = (ans + 2ll*tree.c[x]*pontas);
 }
 
+int getint(){
+	char c;
+	int a = 0;
+	while(!(c>='0'&&c<='9')) c=  getchar();
+	while(c>='0'&&c<='9') a = 10*a + (c-'0') , c = getchar();
+	return a;
+}
+
 int32_t main(){
-	int n , m;
-	cin >> n >> m ;
+	int n=getint() , m=getint();
 	pnode = n + 1;
 	rep(i,0,m){
 		int x , y;
-		cin >> x >> y;
+		x = getint() , y = getint();
 		g.add_edge(x,y,i);
 		g.add_edge(y,x,i);
 	}
@@ -103,5 +110,5 @@ int32_t main(){
 			cst(i);
 		}
 	}
-	cout << ans << endl;
+	printf("%lld\n" , ans);
 }

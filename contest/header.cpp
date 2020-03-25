@@ -3,6 +3,7 @@ using namespace std;
 #define F first
 #define S second
 #define rep(i, a, b) for(int i = a; i < (b); ++i)
+#define per(i, a, b) for(int i = b-1; i>=a ; i--)
 #define trav(a, x) for(auto& a : x)
 #define allin(a , x) for(auto a : x)
 #define all(x) begin(x), end(x)

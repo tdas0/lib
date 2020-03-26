@@ -10,7 +10,7 @@
 */
 
 #pragma once
-typedef point<ll> P;
+typedef Point<ll> P;
 vector<P> minkowski(const vector<P> &A ,const vector<P> &B){
 	vector<P> e;
 	e.push_back(A[0] + B[0]);

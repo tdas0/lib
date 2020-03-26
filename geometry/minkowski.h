@@ -5,7 +5,7 @@
 	Given two convex polygons (ccw, sorted by polar angle by the min lex.)
 	return the minkowski sum of the two of then (if a is an vector in A, b in B, A^B contains (a+b))
 	It may contain collinear points, but can easily be treated while making the minkowski sum
- * Status: not-tested 
+ * Status: multi-tested 
  * Time: O(n + m)
 */
 

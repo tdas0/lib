@@ -7,7 +7,7 @@
 | A  | Dilworth + matching bipartido |:white_check_mark:|:white_check_mark:|:heavy_check_mark:|
 | B  | Geometria |:white_check_mark:|:white_check_mark:|:white_check_mark:|
 | C  | Sparse table + segtree + binserch |:white_check_mark:|:white_check_mark:|:white_check_mark:|
-| D  | Geometria |:white_check_mark:|:white_check_mark:|:heavy_check_mark:|
+| D  | Geometria |:heavy_check_mark:|:white_check_mark:|:heavy_check_mark:|
 | E  | two-pointers básico |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
 | F  | prog dinâmica |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
 | G  | Estrutura de suffixos (automaton) |:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|

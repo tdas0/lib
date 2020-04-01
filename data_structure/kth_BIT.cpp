@@ -3,7 +3,7 @@
  * Date: 2009-10-30
  * License: ??
  * Source: bit kth
- * Description: Pega o kth menor elemento que esta no BIT.
+ * Description: Pega o kth menor elemento que esta no BIT ou o Menor cara "j" tal que prefixo(j) >= K
  * Time: Both operations are $O(\log N)$.
  */
 int bit[N];

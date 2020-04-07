@@ -12,8 +12,8 @@
 
 struct node{
 	pll x;
-	node operator+(const node &rhs) const{ // exemplo de operator
-		if(x.first > rhs.x.first) return *(this);
+	node operator+(const node &rhs) const{  // exemplo de operador de merge
+		if(x.first >= rhs.x.first) return {x};
 		return rhs;
 	}
 };
@@ -22,15 +22,15 @@ struct ST{
 	vector<T> st; int n; 
 	T ini; 
 	ST(int n , T ini) : st(2*n , ini) , n(n) , ini(ini) {}
-	void upd(int pos, T val){ // pos -0 index
+	void upd(int pos, T val){ // pos 0index
 		for(st[pos += n] = val ; pos /= 2;)
 			st[pos] = st[2*pos] + st[2*pos + 1];
 	}
-	T query(int x , int y){ // x e y - 0 index
+	T query(int x , int y){ // [x,y] , x, y -0index
 		T ra = ini , rb = ini;
-		for(x += n, y += n ; x < y ; x/=2 , y/=2){
+		for(x += n, y += n+1 ; x < y ; x/=2 , y/=2){
 			if(x&1) ra = ra + st[x++];
-			if(y&1) rb = rb + st[--y];
+			if(y&1) rb = st[--y] + rb;
 		}
 		return ra + rb;
 	}

@@ -101,6 +101,12 @@ struct Mat{
 	Mat & operator*=(const Mat&a){
 		return *this = (*this)*a;
 	}
+	Mat & operator^=(const ll& x){
+		return *this = pow(*this , x);
+	}
+	Mat operator^(const ll &x){
+		return Mat(*this)^= x;
+	}
 	friend Mat pow(Mat a, ll p){
 		Mat res(a.n,a.m); rep(i,0,a.n) res.d[i][i] = 1;
 		for(; p ; p/=2 , a *= a) if(p&1) res *= a;
@@ -113,6 +119,4 @@ struct Mat{
 
 int32_t main(){
 	// test
-	ModularRing<32> a = 33;
-	cout << a <<" "<< a*32 << endl; ;
 }	

@@ -22,11 +22,10 @@ ll modpow(ll b, ll e ,ll mod) {
 		if (e & 1) ans = ans * b % mod;
 	return ans;
 }
-// begin of automaton
 struct suffix_automaton{
 	enum{alpha  = 256 , first = 0};
 	struct node{
-		int len, link;
+		int len, link , fpos;
 		vi next;
 		node(int x , int y , int v){
 			len = x , link = y;
@@ -42,6 +41,7 @@ struct suffix_automaton{
 		c -= first;
 		int cur = sz(st) , p,q;
 		st.push_back(node(st[last].len + 1,-1,0));
+		st[cur].fpos = st[cur].len - 1;
 	    for (p=last; p!=-1 && !st[p].next[c]; p=st[p].link) st[p].next[c] = cur;				
 		if(p == -1) st[cur].link = 0 ,substrings += st[cur].len;
 		else{
@@ -54,6 +54,7 @@ struct suffix_automaton{
 				int clone = sz(st);
 				st.push_back(node(st[p].len+1,st[q].link,0));
 				st.back().next = st[q].next;
+				st.back().fpos = st[q].fpos;
 	            substrings += st[clone].len - st[st[clone].link].len;
 	            for (; p!=-1 && st[p].next[c]==q; p=st[p].link)
 	                st[p].next[c] = clone;
@@ -79,20 +80,45 @@ struct suffix_automaton{
 		}
 		return true;
 	}
-	ll solve(){
-		ll ans = 0;
-		rep(i,1,sz(st)){
-			ll a = st[st[i].link].len + 1, b = st[i].len;
-			ans = (ans + (b*(b+1))/2ll - (a*(a-1))/2ll);
-		}
-		return ans;
-	}
 };
-// end of automaton
+struct info{
+	int t;
+	char c;
+	int sz ; 
+	int l , r;
+}; 
+
 int32_t main(){
-	suffix_automaton sa;
 	string s;
-	cin >> s;
-	rep(i,0,sz(s)) sa.extend(s[i]);
-	cout << sa.solve() << endl;
-}	
+	while(getline(cin, s)){
+		cout << "Typing this string will require "; 
+		vector<info> ans;
+		reverse(all(s));
+		int j = 0;
+		suffix_automaton sa;
+		for(int i = 0 ; i < sz(s) ;){
+			int cur = 0;
+			while(j < sz(s) && sa.st[cur].next[s[j]]){
+				cur = sa.st[cur].next[s[j]];
+				j++;
+			}	
+			if(i == j){
+				ans.push_back({1,s[j] ,i});
+				j ++ ;
+			}
+			else{
+				ans.push_back({2,'-', i ,sa.st[cur].fpos - (j-i) + 1 , sa.st[cur].fpos});
+			}
+			for(int k = i ; k < j ; k ++){
+				sa.extend(s[k]);
+			}
+			i = j;
+		}
+		cout << sz(ans) << " operations"<< endl;
+		cout << "These operations are the following:" << endl;
+		allin(w,ans){
+			if(w.t == 1) cout << w.t <<" " << w.c << endl;
+			else cout << w.t <<" " << (w.sz + 1) - (w.r+1) <<" " << (w.sz + 1) - (w.l+1)<< endl;
+		}
+	}
+}

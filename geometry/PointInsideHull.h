@@ -6,6 +6,7 @@
  * Description: Determine whether a point t lies inside a convex hull (CCW
  * order, with no colinear points). Returns true if point lies within
  * the hull. If strict is true, points on the boundary aren't included.
+ * !!! IF DOUBLE : Replace onSegment by sedDist <=EPS , and use sideOf(l[0],l[a],l[b],EPS) 
  * Usage:
  * Status: stress-tested
  * Time: O(\log N)

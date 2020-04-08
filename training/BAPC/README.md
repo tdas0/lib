@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- |
 | A  | flow |:heavy_check_mark:|:white_check_mark:|:heavy_check_mark:|
 | B  | implementation |:heavy_check_mark:|:white_check_mark:|:heavy_check_mark:|
-| C  | geometria + minkowski |:white_check_mark:|:white_check_mark:|:heavy_check_mark:|
+| C  | geometria + minkowski |:heavy_check_mark:|:white_check_mark:|:heavy_check_mark:|
 | D  | grafos/ciclos |:white_check_mark:|:white_check_mark:|:heavy_check_mark:|
 | E  | bit 2d  |:heavy_check_mark:|:white_check_mark:|:heavy_check_mark:|
 | F  | grafos |:white_check_mark:|:white_check_mark:|:white_check_mark:|

@@ -113,10 +113,38 @@ struct Mat{
 		return res;
 	}
  };
-
 // end of Matrix
-
+int n ; ll k;
+const ll mod = (ll) 1e9 + 7;
+struct seg{
+	ll a , b, c;
+}; 
+vector<seg> v;
+Mat<ModularRing<mod>> f(16,16);
+Mat<ModularRing<mod>> dp(1,16);
 
 int32_t main(){
-	// test
+	cin >> n >> k;
+	v = vector<seg>(n);
+	rep(i,0,n){
+		cin >> v[i].a >> v[i].b >> v[i].c;
+	}
+	dp.d[0][0] = 1;
+	rep(i,0,16) f.d[i][i] = 1;
+	rep(ix,0,n){
+		ll p = min(v[ix].b , k) - v[ix].a;
+		Mat<ModularRing<mod>> f2(16,16);
+		rep(i,0,v[ix].c+1){
+			for(int j = i - 1 ; j <= (i+1) ; j ++){
+				if(j >= 0 && j <= v[ix].c){
+					f2.d[j][i] = 1;
+				}
+			}
+		}
+		f2 ^= p;
+		f *= f2;
+	}
+	dp *= f;
+	ModularRing<mod> ans = 0 ;
+	cout << dp.d[0][0] << endl; 
 }	

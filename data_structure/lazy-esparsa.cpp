@@ -47,7 +47,7 @@ struct node{
         r->update(mid+1,j,a,b,val);
     }
 
-
+      // cnt = (l!=NULL ? l->cnt : 0 ) + (r!=NULL ? r->cnt : 0 );
   }
 
  }

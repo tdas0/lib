@@ -41,9 +41,11 @@ struct node{
 		if(c[1]) c[1]->push(mid+1, r), cnt += c[1]->cnt;
 	}
 	void upd(int x , int y , int v , int l , int r){
-		int mid = l + (r-l)/2;
+		push(l,r); int mid = l + (r-l)/2;
 		if(x==l && y==r){
-			lazy |= v; return ;
+			lazy |= v; 
+			push(l,r);
+			return ;
 		}
 		if(y <= mid){
 			if(!c[0]) c[0] = new node();

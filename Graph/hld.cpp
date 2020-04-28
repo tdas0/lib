@@ -11,12 +11,12 @@
  */
 
 
-
+template<class T>
 class HLD{
 public:
-	lazy_seg seg;
+	lazy_seg<T> seg;
 	HLD(int n): Sz(n+1) , Hd(n+1) , p(n+1, -1) , g(n+1) , out(n+1) , in(n+1) , n(n){
-		seg = lazy_seg(n);
+		seg = lazy_seg<T>(n);
 		seg.build(0 , n-1 , 1);
 	}
 	void add_edge(int x , int y){

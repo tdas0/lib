@@ -19,20 +19,6 @@ typedef vector<int> vi;
 struct edge{
 	int x ,id; 
 };
-template <int SZ> class graph{
-public:
-	vector<edge> g[SZ+1];
-	int low[SZ+1], in[SZ+1] ; 
-	void add_edge(int x , int y , int id){
-		g[x].push_back({y,id});
-	}
-	void clear(int i){
-		g[i].clear();
-	}
-	vector<edge>* operator[](int id){
-		return &g[id];	
-	}
-};
 // end
 const int N = 100005;
 graph<N> g;

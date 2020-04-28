@@ -35,8 +35,7 @@ ll qry(int x , int y , int l , int r , int curr){
 void build(int l , int r,  int curr){
 	int mid = (l+r)/2;
 	if(l == r){
-		if(isl[l]) st[curr] = dist[l];
-		else st[curr] = (ll) 1e18;
+		st[curr] = v[l]; 
 		return ;
 	}
 	build(l,mid,2*curr);

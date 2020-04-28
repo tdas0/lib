@@ -3,6 +3,8 @@
  * Date: 2020-04-28
  * Description: Computa a SCC, comp[x] diz a componente que o nó x está, comps são as componentes
  * O(n)
+ * Usage: SCC(lista de adjacencia, tamanho) (lista é 1 indice)
+ * grafo indexado no 1
  * Status: tested
  */
 

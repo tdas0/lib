@@ -11,7 +11,7 @@
 //Numero de maneiras de colocar N objetos em K mochilas
 //considerando que cada mochila tem pelo menos 1 objeto
 //choose[i] = choose(k, i) = k escolhe i
-// ans = somatorio ( (-1)^i * (k choose i) * (k-1)^n)
+// ans = somatorio ( (-1)^i * (k choose i) * (k-i)^n)
 ll get(int n, int k){
 	ll ans = 0;
 	vector<ll> choose(k+1);

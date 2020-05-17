@@ -1,7 +1,8 @@
 /*
 * Description: retora o lower e upper hull. Bom para fazer busca ternaria
 * ** Based on hacker earth blog
-* Status: tested
+* Status: somewhat tested
+* Melhor colocar um split hull no lugar...
 */
 #include "Point.h"
 

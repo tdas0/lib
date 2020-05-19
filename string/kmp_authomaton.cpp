@@ -1,6 +1,8 @@
 /* Source: https://cp-algorithms.com/string/prefix-function.html
  * Description: Builds automaton on string in O(alpha * |S|)
  * aut[i][c] -> next position if on position 'i' and adding the c-th character 
+ * Assumes the first character is 'a', next 'b'...
+ * Tested on https://codeforces.com/group/q6XD0oW97M/contest/274944/problem/B
  */
  
  // build prefix function

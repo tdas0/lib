@@ -5,7 +5,7 @@
  
  // build prefix function
  vector<int> prefix_function(string s) {
-    int n = (int)s.length();
+    int n = sz(s);
     vector<int> pi(n);
     rep(i,1,n) {
         int j = pi[i-1];
@@ -22,7 +22,7 @@ vi pi;
 vector<vi> aut;
 void compute_automaton(string s,int alpha = 26) {
     s += '#'; 
-    int n = s.size();
+    int n = sz(s);
      pi = prefix_function(s);
     aut.assign(n+1, vector<int>(alpha));
     rep(i,0,n){

@@ -29,8 +29,8 @@ struct ST{
 	T query(int x , int y){ // [x,y] , x, y -0index
 		T ra = ini , rb = ini;
 		for(x += n, y += n+1 ; x < y ; x/=2 , y/=2){
-			if(x&1) ra = ra + st[x++];
-			if(y&1) rb = st[--y] + rb;
+			if(x&1) ra = ra + st[x] , x++;
+			if(y&1) --y , rb = st[y] + rb;
 		}
 		return ra + rb;
 	}

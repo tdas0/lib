@@ -12,6 +12,8 @@
   g[x] = grau do vertice x
   tour = ciclo do tipo [comeco] ... [comeco]
   del[x] = (1, se aresta ja foi utilizada. 0 caso contrário)
+  tour_e = ids das arestas usadas . se necessário, trocar vector<int> pilha para vector<pii> pilha
+  ver comentarios para isso ^
 */
 
 int g[N];
@@ -29,6 +31,7 @@ inline void find(int u){
         }
         if(!g[x]){
             tour.pb(x);
+            // tour_e.pb(x.ss) ;
             pilha.pop_back();
             continue;
         }
@@ -37,6 +40,7 @@ inline void find(int u){
         g[x] --;
         del[v.s] = 1;
         pilha.pb(v.f);
+        // pilha.pb(v)
     }
 }
 

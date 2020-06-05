@@ -17,7 +17,7 @@ ll largestAreaQuad(){
 			ll best = 0;
 			int n = v2.size();
 			for(int i=0;i<n;i++){
-				if(v2[i]==v[0] || v2[i]==v[1] || v2[i]==v[2])continue;
+				if(v2[i]==v[0] || v2[i]==v[1] || v2[i]==v[2])continue;// only if doesnt have equal points! If it does, use ids
 				ll tudo = polygonArea2(v);
 				ll op1 = abs(v2[i].cross(v[0],v[1]));
 				ll op2 = abs(v2[i].cross(v[0],v[2]));

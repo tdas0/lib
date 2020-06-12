@@ -16,10 +16,11 @@
   ver comentarios para isso ^
 */
 
-int g[N];
+
+int g[N]; 
 vector<pii> grafo[N];
 vi tour;
-int del[N];
+int del[N]; // N = max(n,m) !!!
 inline void find(int u){
     vector<int>pilha;
     pilha.pb(u);

@@ -14,6 +14,7 @@
   del[x] = (1, se aresta ja foi utilizada. 0 caso contrário)
   tour_e = ids das arestas usadas . se necessário, trocar vector<int> pilha para vector<pii> pilha
   ver comentarios para isso ^
+  caso seja um tour incompleto ([comeco] ... [fim]) lembrar de dar reverse no tour
 */
 
 

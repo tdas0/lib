@@ -1,4 +1,4 @@
-// weakly tested on cses
+// tested on cses and grupo da summer
 struct bipartite_match{ // 1 indice
   int n , m;
   vector<vi> g; vi vis , match;
@@ -44,7 +44,7 @@ struct bipartite_match{ // 1 indice
       }
     }
   }
-  vector<int> vertex_cover(){
+  vector<int> vertex_cover(){ // size == maximum matching
     vector<int> res;
     fill(all(vis),false);
     for(int i=1;i<=n;i++){
@@ -67,7 +67,7 @@ struct bipartite_match{ // 1 indice
   }
   // end of vertex cover
   // status: not tested
-  vector<int> independent_set(){
+  vector<int> independent_set(){// size == all - maximum matching
     vi cover = vertex_cover();
     fill(all(vis),false);
     for(int x : cover)vis[x]=1;
@@ -77,36 +77,25 @@ struct bipartite_match{ // 1 indice
     return res;
   }
   //status: tested:
-  vector<pii> edge_cover(){
-    // CANNOT use solve function again after this!
-    int ini = solve();
+  vector<pii> edge_cover(){ // size == number of not isolated vertices - maximum matching
+    solve();
+    vi aux = match;
     vector<pii> res;
-    for(int i=1;i<=n;i++){
-      if(match[i]){
-        for(auto w : g[i]){
-          if(match[w]==i)res.pb(pii(i,w));
-          else if(match[w]==0){
-            match[w] = -1;
-            res.pb(pii(i,w));
+    rep(i,1,n+1){
+      if(aux[i]){
+          for(auto w : g[i]){
+              if(aux[w]==i)res.pb(pii(i,w));
+              else if(aux[w]==0)res.pb(pii(i,w)),aux[w]=-1;
           }
+      }
+    }
+    rep(i,n+1,n+m+1){
+      if(aux[i]){
+        for(auto w : g[i]){
+          if(!aux[w])res.pb(pii(w,i)),aux[w]=1;
         }
       }
     }
-    for(int i=n+1;i<=n+m;i++){
-      if(match[i]>0){
-        for(auto w : g[i]){
-          if(!match[w]){
-            res.pb(pii(w,i));
-            match[w] = 1;
-          }
-        }
-      }
-    }
-    int total =0;
-    for(int i=1;i<=n+m;i++){
-      if(g[i].size())total++;
-    }
-    assert(sz(res) == total - ini);
     return res;
   }
 

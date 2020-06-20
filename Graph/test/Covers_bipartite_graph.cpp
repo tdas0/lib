@@ -32,7 +32,7 @@ struct bipartite_match{ // 1 indice
     return ans;
   }
 
-  // status: weakly tested
+  // status: tested
   void dfs2(int v){
     vis[v] = 1;
     for(auto w : g[v]){
@@ -76,24 +76,37 @@ struct bipartite_match{ // 1 indice
     assert(sz(res) == n - solve());
     return res;
   }
-  // not tested:
+  //status: tested:
   vector<pii> edge_cover(){
+    // CANNOT use solve function again after this!
+    int ini = solve();
     vector<pii> res;
     for(int i=1;i<=n;i++){
       if(match[i]){
         for(auto w : g[i]){
-          res.pb(pii(i,w));
+          if(match[w]==i)res.pb(pii(i,w));
+          else if(match[w]==0){
+            match[w] = -1;
+            res.pb(pii(i,w));
+          }
         }
       }
     }
     for(int i=n+1;i<=n+m;i++){
-      if(match[i]){
+      if(match[i]>0){
         for(auto w : g[i]){
-          if(!match[w])res.pb(pii(w,i));
+          if(!match[w]){
+            res.pb(pii(w,i));
+            match[w] = 1;
+          }
         }
       }
     }
-    assert(sz(res) == n - solve());
+    int total =0;
+    for(int i=1;i<=n+m;i++){
+      if(g[i].size())total++;
+    }
+    assert(sz(res) == total - ini);
     return res;
   }
 

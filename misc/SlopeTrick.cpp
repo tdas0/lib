@@ -9,7 +9,7 @@ rep(i,0,n)a[i]-=i;
   
 priority_queue<ll> pq;
 pq.push(a[0]);
-rep(i,0,n){
+rep(i,1,n){
    pq.push(a[i]);
     
    if(pq.top() > a[i]){

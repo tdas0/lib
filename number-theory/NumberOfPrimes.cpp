@@ -5,7 +5,7 @@
 // and on https://codeforces.com/gym/102576/problem/A
 // Modified code from Emiso
 
-const int N = 2e6 + 100; // > cbqrt(MAXN)
+const int N = 2e6 + 100; // > cbqrt(MAXN) , actually > MAXN^(2/3) is better if possibly to memory limits
 
 ll pref_pi[N];
 

@@ -3,7 +3,7 @@
 // Source: https://en.wikipedia.org/wiki/Meissel%E2%80%93Lehmer_algorithm
 // Tested on: https://codeforces.com/contest/665/problem/F
 // and on https://codeforces.com/gym/102576/problem/A
-// Size of array fixed for N=1e11. ~sqrt I think should work fine, but could put higher N
+// Size of array fixed for N=1e11. ~MAXN^(2/3) I think should work fine, but could put higher N
 // Also, could use linear sieve
 // Modified code from Emiso
 

@@ -52,7 +52,7 @@ ll icbrt(ll x){
 ll solve(ll x,int k){
   if(x < NN and k<NP)return dp[x][k];
   if(k==0)return x;
-  if(x < primes[k-1] * primes[k-1])return pref_pi[x] - (k-1);
+  if(x < primes[k-1] * primes[k-1] && x < N)return max(1ll,pref_pi[x] - (k-1));
   return solve(x,k-1) - solve(x/primes[k-1],k-1);
 }
 

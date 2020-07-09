@@ -1,4 +1,4 @@
-Formula de Euler: V - E + F = 2 (para grafo planar)
+Formula de Euler: V - E + F = 2 (para grafo planar) / V - E + F = 1 + C (C sendo a qtd de componentes no grafo planar)
 Handshaking: Numero par de vertices tem grau impar
 Kirchhoff's Theorem: Monta matriz onde Mi,i = Grau[i] e Mi,j = -1 se houver aresta i-j ou 0 caso contrario, remove uma linha e uma coluna qualquer e o numero de spanning trees nesse grafo eh o det da matriz
 

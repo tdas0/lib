@@ -1,4 +1,4 @@
-namae wa? ?
+namae wa?
 ================
 
 library by NaimSS, LiSA, MatheusLealV

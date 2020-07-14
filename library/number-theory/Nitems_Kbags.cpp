@@ -37,6 +37,6 @@ ll get(int n, int k){
        if (j == 1 || i == j) 
           dp[i][j] = 1; 
        else
-          dp[i][j] = j * dp[i - 1][j] + dp[i - 1][j - 1]; 
+          dp[i][j] = (1ll*j * dp[i - 1][j] + dp[i - 1][j - 1])%mod; 
   
  dp[n][k] -> numero de particoes dos numeros 1...n em K grupos nao vazios (assumindo n>=k)  

@@ -1,4 +1,4 @@
-名前は ?
+namae wa? ?
 ================
 
 library by NaimSS, LiSA, MatheusLealV

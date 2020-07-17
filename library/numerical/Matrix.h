@@ -2,6 +2,8 @@
  * Author: Tiago Domingos
  * Description: Matrix class
  * Status:tested
+ * !!! If get TLE, try to change vector<vector<T>> to an array
+ * ~ 4 x faster on https://codeforces.com/gym/102644/problem/H
  */
 template<class T>
 struct Mat{

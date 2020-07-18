@@ -6,7 +6,7 @@ library by NaimSS, LiSA, MatheusLealV
 ## Onsite Contest
 | Contest                     | Date          | Rank | Solved/Total |
 |-----------------------------|:-------------:|:----:|:------------:|
-| Latam Subregional 2020      | 14/11/2020    |   ?  |     ?/?      |
+| Latam Subregional 2020      | 2020/11/14    |   ?  |     ?/?      |
 
 
 ## Training
@@ -15,3 +15,21 @@ library by NaimSS, LiSA, MatheusLealV
 | Contest                               | Date          | Rank | Solved/Total |
 |---------------------------------------|:-------------:|:----:|:------------:|
 | XVI Opencup, GP of Eurasia            | 2020/07/11    |  100 |     9/12     |
+| 2020 Petrozavodsk, Jagiellonian U     | 2020/07/03    |  38  |     7/12     |
+| 2013 Southwestern Europe Regional     | 2020/06/26    |  9   |     7/10     |
+| 2013 Benelux BAPC                     | 2020/06/19    |  3   |     10/10    |
+| 2020 UP Algoolympics Final            | 2020/06/13    |  2   |     8/13     |
+| 2019 Asia Taipei-Hsinchu Regional     | 2020/06/05    |  6   |     8/13     |
+| 2010 NCPC                             | 2020/05/22    |  1   |     8/11     |
+| 2017 NCPC                             | 2020/05/16    |  3   |     9/11     |
+| 2013 Northwestern European Regional   | 2020/05/08    |  8   |     8/11     |
+| 2019 ICPC Swiss Subregional           | 2020/05/02    |  9   |     10/12    |
+| 2019 Northwestern European Regional   | 2020/04/24    |  21  |     5/12     |
+| 2019 ICPC Pacific Northwest           | 2020/04/17    |  4   |     9/13     |
+| 2016 Southwestern Europe Regional     | 2020/04/11    |  3   |     7/11     |
+| XVIII Opencup, GP of Eurasia          | 2020/04/04    |  179 |     5/12     |
+| 2017 NEERC Northern Eurasia           | 2020/03/27    |  42  |     5/12     |
+| 2019 Southwestern Europe Regional     | 2020/03/20    |  8   |     9/12     |
+| 2014 NEERC Eastern Subregional        | 2020/03/12    |  10  |     7/12     |
+| 2018 Southwestern Europe Regional     | 2020/03/06    |  20  |     5/11     |
+| 2016 Northwestern European Regional   | 2020/02/24    |  4   |     8/11     |

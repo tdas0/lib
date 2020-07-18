@@ -30,3 +30,13 @@ ll get(int n, int k){
 	}
 	return ans;
 }
+
+// N^2 approach to  Stirling numbers of the second kind
+  for (int i = 1; i <= n; i++) 
+     for (int j = 1; j <= i; j++) 
+       if (j == 1 || i == j) 
+          dp[i][j] = 1; 
+       else
+          dp[i][j] = (1ll*j * dp[i - 1][j] + dp[i - 1][j - 1])%mod; 
+  
+ dp[n][k] -> numero de particoes dos numeros 1...n em K grupos nao vazios (assumindo n>=k)  

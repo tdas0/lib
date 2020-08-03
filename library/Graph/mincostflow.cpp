@@ -9,7 +9,7 @@ using namespace std;
 		Vertices are labeled from 0 to n (inclusive).
 		Edge cost and capacities must fit int (flow and cost 
 		returned are long long).
-		Edge Cost must be non-negative.
+		Edge cost in network must not create an negative cost cycle		
 
 	Usage:
 		Set MAXV if necessary.

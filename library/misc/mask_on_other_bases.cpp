@@ -4,7 +4,7 @@
  */
  
  const int k = ;//base
- int pwrk[logk];
+ int powk[logk]; // powk[i] = pow(k,i) 
 
  int get_mask(int mask, int i){
 	return (mask/powk[i]) % k;

@@ -56,3 +56,7 @@ n^e mod m == n^((phi(m) + e)mod phi(m)) mod m
 
 Seja T(k, i) = Quantas vezes o valor de V[1] aparece em "i" após fazer "k" somas de prefixo.
     T(k, i) = somatorio de j = 1 -> r de ((k + j - 1) escolhe(k - 1)) 
+
+Multiplicative order: Smallest positive K such that a^k == 1 mod N -> ord_n(a)
+As a consequence of Lagrange's theorem, ord_n(a) always divides φ(n) ( phi(n) )
+Se gcd(a,n)!=1 não existe k>0 ^

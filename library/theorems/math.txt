@@ -52,7 +52,9 @@ Linearity of expectation: Tendo duas variaveis X e Y e constantes a e b, o valor
 (1 + x)^(-n) = somatorio( ( (-1)^k ) * ( (n + k - 1) escolhe k) * (x ^ k) ), k = 0 até k = inf
 
 e >= log2(m)
-n^e mod m == n^((phi(m) + e)mod phi(m)) mod m
+n^e mod m == n^(phi(m) (e mod phi(m)) mod m
+
+phi(phi(...phi(m))) -> 1 em O(logM) iterações 
 
 Seja T(k, i) = Quantas vezes o valor de V[1] aparece em "i" após fazer "k" somas de prefixo.
     T(k, i) = somatorio de j = 1 -> r de ((k + j - 1) escolhe(k - 1)) 

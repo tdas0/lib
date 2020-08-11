@@ -9,6 +9,8 @@
  * use u[i] and v[j]. COST are 0-index and u/v are 1-index 
  * Time: O(N^2M)
  * Status: Tested on kattis:cordonbleu, tested on ASC2-F
+ * Other implementarions: https://github.com/bqi343/USACO/blob/master/Implementations/content/graphs%20(12)/Matching/Hungarian.h
+ * https://github.com/kth-competitive-programming/kactl/blob/master/content/graph/WeightedMatching.h#L39
  */
  
  ll hungarian(vector<vi> cost){ // cost 0-index

@@ -1,5 +1,5 @@
 /* Author: Common knowledge
- * Descrição: Crivo para decompor numeros no range [L,R] , R<=10^12 em O(tamanho do range)
+ * Descrição: Crivo para decompor numeros no range [L,R] , R<=10^12 para casos de R-L pequeno i.e R-L<=1e6
  * Precisa precomputar os primos menores que sqrtR com outro crivo
  * Após o crivo, mark[i-l] tem 1 se i não for primo, caso contrário, mark[i-l] é um primo.
  * Status: Tested on Petrozavodsk Summer-2017. Songyang Chen Contest 1 - problem C

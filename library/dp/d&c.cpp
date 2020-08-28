@@ -3,6 +3,9 @@
  * Needs to be monotonic
  * !! compute(1,n,1,n) vs compute(i,n,i,n)  
  * Tested on https://codeforces.com/contest/321/submission/81919245
+ * Tested on https://codeforces.com/contest/868/problem/F
+ * Usefull Strat: if is difficult to precompute all cost, one can use two pointers
+ * Similar to MO's algorithm, resulting in O(K*Nlog\N) complexity, up only by a constant factor.
 */
 struct DP{
 	int n , inf; 

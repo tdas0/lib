@@ -33,3 +33,4 @@ library by NaimSS, LiSA, MatheusLealV
 | 2014 NEERC Eastern Subregional        | 2020/03/12    |  10  |     7/12     |
 | 2018 Southwestern Europe Regional     | 2020/03/06    |  20  |     5/11     |
 | 2016 Northwestern European Regional   | 2020/02/24    |  4   |     8/11     |
+| 2019 Southeastern European Regional   | 2020/08/30    |  9?  |     6/11     |

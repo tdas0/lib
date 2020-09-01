@@ -65,6 +65,7 @@ Se gcd(a,n)!=1 não existe k>0 ^
 
 Stirling Numbers:
 S1(n,k) = numero de permutacoes com exatamente K ciclos
+S1(n,k) = coefficient of x^k in the polynomial x*(x+1)(x+2)...(x+n-1) (can be found in Nlog^2 with FFT)
    S1(0, 0) = 1
    S1(n, 0) = 0 if n > 0
    S1(n, k) = 0 if k > n

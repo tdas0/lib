@@ -62,3 +62,14 @@ Seja T(k, i) = Quantas vezes o valor de V[1] aparece em "i" após fazer "k" soma
 Multiplicative order: Smallest positive K such that a^k == 1 mod N -> ord_n(a)
 As a consequence of Lagrange's theorem, ord_n(a) always divides φ(n) ( phi(n) )
 Se gcd(a,n)!=1 não existe k>0 ^
+
+Stirling Numbers:
+S1(n,k) = numero de permutacoes com exatamente K ciclos
+   S1(0, 0) = 1
+   S1(n, 0) = 0 if n > 0
+   S1(n, k) = 0 if k > n
+   S1(n, k) = S1(n - 1, k - 1) + (n - 1) * S1(n - 1, k) # For unsigned
+S2(n,k) = numero de particoes dos primeiros N inteiros em K conjuntos não vazios
+   S2(n, 0) and S2(0, k) = 0 # for n, k > 0
+   S2(n, n) = 1
+   S2(n + 1, k) = k * S2(n, k) + S2(n, k - 1)

@@ -15,6 +15,7 @@
   tour_e = ids das arestas usadas . se necessário, trocar vector<int> pilha para vector<pii> pilha
   ver comentarios para isso ^
   caso seja um tour incompleto ([comeco] ... [fim]) lembrar de dar reverse no tour
+  funciona com self loop (mas deve aumentar em 2 o grau/botar 2 vezes no grafo) -> tested on 527E - #296 div2
 */
 
 

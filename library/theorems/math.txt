@@ -74,3 +74,11 @@ S2(n,k) = numero de particoes dos primeiros N inteiros em K conjuntos não vazio
    S2(n, 0) and S2(0, k) = 0 # for n, k > 0
    S2(n, n) = 1
    S2(n + 1, k) = k * S2(n, k) + S2(n, k - 1)
+
+Sum of K powers - Educ 7 - F
+O(min(N,K))
+S(n,k) = sum i^k
+P[i] = sum(j^k , 0<=j<=i).
+S(n,k) = t * ((-1)^(k+1-i)) * (n-i)^-1 * finv[i] * finv[k+1-i] * p[i]
+finv[i] -> 1/(1*2...*i) e t = (n*(n-1)...*(n-k-1))
+Dá pra fazer com interpolação também...

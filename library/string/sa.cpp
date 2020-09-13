@@ -14,6 +14,7 @@
  * The input string must not contain any zero bytes.
  * Time: O(n \log n)
  * Status: stress-tested
+ * Usefull debug:  rep(i,0,sz(s)+1)cout << sa.sa[i]<<" "<<s.substr(sa.sa[i])<<" "<<sa.lcp[i] << endl;
  */
 #pragma once
 

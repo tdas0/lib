@@ -39,5 +39,11 @@ void crivo_segmentado(ll l,ll r){
 			ans[i-l] = ans[i-l]*(cnt + 1)%M; // exemplo -> qtd de divisores de i
 		}
 	}
+	
+	for(ll i = l;i<=r;i++){
+	  if(mark2[i-l]!=1){//é um primo > Sqrt
+		ans[i-l] = ans[i-l] * (1 + 1) %M;    
+	  }
+	}
   
 }

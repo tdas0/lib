@@ -4,7 +4,7 @@
  * Source: kactl
  * Description: Segtree sem lazy, 0 index, ST<T> seg(tamanho , elemento inicial), criar uma classe T 
  * o merge dela deve ser o operador +
- * iniciar a segtree com tamanho e o elemento inicial (se for max, -inf, se for min + inf , .. etc)
+ * iniciar a segtree com tamanho 
  * 0 INDICE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
  * Time: O(\log N)
  * Status: stress-tested
@@ -19,14 +19,13 @@ struct node{
 template <class T>
 struct ST{
 	vector<T> st; int n; 
-	T ini; 
-	ST(int n , T ini) : st(2*n , ini) , n(n) , ini(ini) {}
+	ST(int n) : st(2*n) , n(n){}
 	void upd(int pos, T val){ // pos 0index
 		for(st[pos += n] = val ; pos /= 2;)
 			st[pos] = st[2*pos] + st[2*pos + 1];
 	}
 	T query(int x , int y){ // [x,y] , x, y -0index
-		T ra = ini , rb = ini;
+		T ra , rb;
 		bool okl = false, okr = false;
 		for(x += n, y += n+1 ; x < y ; x/=2 , y/=2){
 			if(x&1) ra = (okl ? ra + st[x] : st[x]) , x++ , okl = true;

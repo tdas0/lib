@@ -9,7 +9,6 @@
  * Time: O(\log N)
  * Status: stress-tested
  */
-
 struct node{
 	pll x;
 	node operator+(const node &rhs) const{  // exemplo de operador de merge
@@ -28,10 +27,11 @@ struct ST{
 	}
 	T query(int x , int y){ // [x,y] , x, y -0index
 		T ra = ini , rb = ini;
+		bool okl = false, okr = false;
 		for(x += n, y += n+1 ; x < y ; x/=2 , y/=2){
-			if(x&1) ra = ra + st[x] , x++;
-			if(y&1) --y , rb = st[y] + rb;
+			if(x&1) ra = (okl ? ra + st[x] : st[x]) , x++ , okl = true;
+			if(y&1) --y , rb = (okr ? st[y] + rb : st[y]) , okr = true;
 		}
-		return ra + rb;
+		return (okl ? (okr ? ra + rb : ra): rb);
 	}
 };

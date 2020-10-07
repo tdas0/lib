@@ -134,3 +134,41 @@ cut(LCT[u],LCT[v]);
 sn Lca = lca(LCT[a],LCT[b]);
 if(Lca==NULL)// n tao conectados
 else cout << Lca->id << endl; // id dado na hora de inicializar 
+
+// Exemplo2: Quando a ORDEM IMPORTA!!!
+// ver a quantidade de parantesis para botar para que de A->B seja uma parantesisação boa:
+
+// update val:
+LCT[a]->access();
+LCT[a]->val = v[a];
+LCT[a]->calc();
+// UPDATE ACESS/PROP:
+friend int getPre(sn x,int b){
+    return x?x->pre[b]:0;
+  }
+void prop() { // lazy prop
+    if (!flip) return;
+    swap(c[0],c[1]);
+    swap(pre[0],pre[1]);
+    flip = 0;
+    rep(i,0,2) if (c[i]) c[i]->flip ^= 1;
+  }
+void calc() { // recalc vals
+    rep(i,0,2) if (c[i]) c[i]->prop();
+    sz = 1+getSz(c[0])+getSz(c[1]);
+    sub = 1+getSub(c[0])+getSub(c[1])+vsub;
+    tot = val + getTot(c[0])+getTot(c[1]);
+    rep(i,0,2){
+      pre[i] = min({0,getPre(c[i],i),getTot(c[i]) + val,getTot(c[i]) + val + getPre(c[i^1],i)});
+    } // Tem que manter dois valores, se o caminho tiver normal ou invertido
+}
+// Answer query:
+LCT[a]->makeRoot();
+LCT[b]->access();
+
+int tot = LCT[b]->tot,pre = LCT[b]->pre[0];
+int res = abs(pre);
+tot += res;
+res += tot;
+if(res!=0)cout << res<<endl;
+else cout<<"balanced"<<endl;

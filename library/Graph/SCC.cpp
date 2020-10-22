@@ -6,7 +6,7 @@
  * Usage: SCC(lista de adjacencia, tamanho) (lista é 1 indice)
  * grafo indexado no 1
  * DAG retorna o dag SEM ARESTAS REPETIDAS
- * Status: tested
+ * Status: tested on https://cses.fi/problemset/task/1685/ and more
  */
 
 struct SCC{
@@ -29,13 +29,13 @@ struct SCC{
     }
     return val[j] = low;
   }
+
   void scc(){
     val.assign(n+1,0); comp.assign(n+1,-1);
     Time = ncomps = 0 ;
     rep(i,1,n+1) if(comp[i] < 0 ) dfs(i);
   }
-	
-  // Tested on CSES 1685:
+  
   vector<vi> DAG(){// sem arestas repetidas
     vector<vi> dag(n+1);val.assign(n+1,-1);
 

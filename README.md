@@ -34,3 +34,4 @@ library by NaimSS, LiSA, MatheusLealV
 | 2018 Southwestern Europe Regional     | 2020/03/06    |  20  |     5/11     |
 | 2016 Northwestern European Regional   | 2020/02/24    |  4   |     8/11     |
 | 2019 Southeastern European Regional   | 2020/08/30    |  9?  |     6/11     |
+| 2015 NWERC                            | 2020/10/25    |  5   |     8/11     |

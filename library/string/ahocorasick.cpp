@@ -55,7 +55,7 @@ struct AhoCorasick {
 					(N[ed].end == -1 ? N[ed].end : backp[N[ed].start])
 						= N[y].end;
 					// N[ed].endlink = (N[y].start == -1 ? N[y].endlink : 
-					// y);			(uncomment for suffix-links)			
+					// y);			(uncomment for endpos-links)			
 					N[ed].nmatches += N[y].nmatches;
 					q.push(ed);
 				}

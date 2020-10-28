@@ -9,6 +9,7 @@
  * (up to $N \sqrt N$ many if no duplicate patterns) that start at each position (shortest first).
  * Duplicate patterns are allowed; empty patterns are not.
  * To find the longest words that start at each position, reverse all input.
+ * endlink points to the closests suffix-link reachable that is an end position of some string (commented)
  * Time: create is $O(26N)$ where $N$ is the sum of length of patterns.
  * find is $O(M)$ where $M$ is the length of the word. findAll is $O(NM)$.
  * Status: lightly tested
@@ -19,7 +20,7 @@ struct AhoCorasick {
 	enum {alpha = 26, first = 'A'};
 	struct Node {
 		// (nmatches is optional)
-		int back, next[alpha], start = -1, end = -1, nmatches = 0;
+		int back, next[alpha], start = -1, end = -1, nmatches = 0 , endlink = -1;
 		Node(int v) { memset(next, v, sizeof(next)); }
 	};
 	vector<Node> N;
@@ -53,6 +54,8 @@ struct AhoCorasick {
 					N[ed].back = y;
 					(N[ed].end == -1 ? N[ed].end : backp[N[ed].start])
 						= N[y].end;
+					N[ed].endlink = (N[y].start == -1 ? N[y].endlink : 
+					y);						
 					N[ed].nmatches += N[y].nmatches;
 					q.push(ed);
 				}

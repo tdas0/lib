@@ -9,7 +9,7 @@
  * (up to $N \sqrt N$ many if no duplicate patterns) that start at each position (shortest first).
  * Duplicate patterns are allowed; empty patterns are not.
  * To find the longest words that start at each position, reverse all input.
- * endlink points to the closests suffix-link reachable that is an end position of some string (commented)
+ * endlink points to the closest suffix-link reachable that is an end position of some string (commented)
  * Time: create is $O(26N)$ where $N$ is the sum of length of patterns.
  * find is $O(M)$ where $M$ is the length of the word. findAll is $O(NM)$.
  * Status: lightly tested

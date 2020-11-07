@@ -22,3 +22,4 @@ std::mt19937 rng((int) std::chrono::steady_clock::now().time_since_epoch().count
 // Pretty good compilation command:
 // g++ -g a.cpp --std=c++17 -Wall -Wextra -Wno-unused-result -Wconversion -Wfatal-errors -o a.out
 // -fsanitize=undefined,address (dont abuse, slow compiling)
+// ulimit -s unlimited (change stack size)

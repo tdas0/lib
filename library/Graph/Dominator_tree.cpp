@@ -1,5 +1,16 @@
-/* add header later */
-// From https://codeforces.com/group/W2YvE0cOoh/contest/284785/problem/E
+/* Author: Cara do blog ai
+ * Descrição: Acha a dominator tree com raiz em Root, um nó tem na subarvore todos
+ * Os caras tal que só dá pra chegar da raiz pra eles passando por mim
+ * O sub lá é pra questao do cf, assim como a outra dfs, pode tirar sem problemas
+ * O mais importante é que a arvore é montada :)
+ * Use:
+ * Dominator::addEdge(a,b);
+ * Dominator::get(n,1);
+ * DFS:
+ * for(auto to : Dominator::tree[v])//....
+ * Status: Tested on codeforces and cses critical cities - https://cses.fi/paste/bd9ebff02db7215412f6fd/
+ */
+ // From https://codeforces.com/group/W2YvE0cOoh/contest/284785/problem/E
 
 const int N = ; // maxN
 namespace Dominator{

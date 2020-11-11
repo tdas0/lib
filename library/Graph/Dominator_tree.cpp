@@ -1,7 +1,6 @@
 /* Author: Cara do blog ai
  * Descrição: Acha a dominator tree com raiz em Root, um nó tem na subarvore todos
  * Os caras tal que só dá pra chegar da raiz pra eles passando por mim
- * O sub lá é pra questao do cf, assim como a outra dfs, pode tirar sem problemas
  * O mais importante é que a arvore é montada :)
  * Use:
  * Dominator::addEdge(a,b);
@@ -38,12 +37,6 @@ namespace Dominator{
       rg[arr[w]].pb(arr[u]);
     }
   }
-  void dfs1(int u,int p,int sub[]){
-    sub[u]=1;
-    for(auto w:tree[u])
-      if(w!=p)
-        dfs1(w,u,sub),sub[u]+=sub[w];
-  }
   void reset(int n){
     for(int i=1;i<=n;i++){
       g[i].clear();rg[i].clear();tree[i].clear();arr[i]=0;
@@ -54,7 +47,7 @@ namespace Dominator{
     g[u].pb(v);
   }
   //Build Dominator tree(in main)
-  void get(int n,int root,int sub[]){
+  void get(int n,int root){
     dfs0(root);n=T;
     for(int i=n;i>=1;i--){
       for(int j=0;j<sz(rg[i]);j++)
@@ -71,6 +64,6 @@ namespace Dominator{
       tree[rev[i]].pb(rev[dom[i]]);
       tree[rev[dom[i]]].pb(rev[i]);
     }
-    dfs1(rev[1],rev[1],sub);
+   
   }//done :) 
 }

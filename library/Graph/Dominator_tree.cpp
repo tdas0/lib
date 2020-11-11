@@ -4,7 +4,7 @@
  * O mais importante é que a arvore é montada :)
  * Use:
  * Dominator::addEdge(a,b);
- * Dominator::get(n,1);
+ * Dominator::get(n,root);
  * DFS:
  * for(auto to : Dominator::tree[v])//....
  * Status: Tested on codeforces and cses critical cities - https://cses.fi/paste/bd9ebff02db7215412f6fd/

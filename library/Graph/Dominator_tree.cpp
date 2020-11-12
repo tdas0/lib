@@ -3,11 +3,13 @@
  * Os caras tal que só dá pra chegar da raiz pra eles passando por mim
  * O mais importante é que a arvore é montada :)
  * Use:
+ * !!! 1-index
  * Dominator::addEdge(a,b);
  * Dominator::get(n,root);
  * DFS:
  * for(auto to : Dominator::tree[v])//....
  * Status: Tested on codeforces and cses critical cities - https://cses.fi/paste/bd9ebff02db7215412f6fd/
+ * Tested on https://judge.yosupo.jp/
  */
  // From https://codeforces.com/group/W2YvE0cOoh/contest/284785/problem/E
 

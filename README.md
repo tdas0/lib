@@ -6,7 +6,7 @@ library by NaimSS, LiSA, MatheusLealV
 ## Onsite Contest
 | Contest                     | Date          | Rank | Solved/Total |
 |-----------------------------|:-------------:|:----:|:------------:|
-| Latam Subregional 2020      | 2020/11/14    |   ?  |     ?/?      |
+| Latam Subregional 2020      | 2020/11/14    |   1  |     10/15    |
 
 
 ## Training

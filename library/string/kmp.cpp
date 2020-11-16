@@ -26,7 +26,7 @@ struct kmp{
 		for(int i = 0, j = 0; i < n; i++){
 			while(j >= 0 and s[i] != p[j]) j = b[j];
 			j ++;
-			if(j == m) pos.push_back(i - j + 1);
+			if(j == m) pos.push_back(i - j + 1) , j = b[j];
 		}
 	}
 	void clear(){

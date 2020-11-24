@@ -82,3 +82,12 @@ P[i] = sum(j^k , 0<=j<=i).
 S(n,k) = t * ((-1)^(k+1-i)) * (n-i)^-1 * finv[i] * finv[k+1-i] * p[i]
 finv[i] -> 1/(1*2...*i) e t = (n*(n-1)...*(n-k-1))
 Dá pra fazer com interpolação também...
+
+Pisano:
+k(m) = menor l tal que F[l] == 0 mod(m) && F[l+1]==1 mod(m) 
+k(a*b) = lcm(k(a),k(b)) se gcd(a,b)=1
+k(p^k) divide p^(k-1) * k(p)
+k(5)=20,k(2)=3,k(3)=8
+Se p>5:
+k(p) divide (p-1) se p == +-1 mod 5
+k(p) divide 2*(p+1) se p==+-2 mod 5

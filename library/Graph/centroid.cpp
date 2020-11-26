@@ -1,52 +1,23 @@
 /* Compute the centroid of a tree
 * Complexity: O(NlogN) * O(cost of querys)
 * Author: common knowledge
-* Status: tested on https://codeforces.com/contest/715/problem/C
+* Status: tested on https://codeforces.com/contest/715/problem/C https://www.codechef.com/IPC20D1/problems/TRDST
 * g[i] -> vizinhos de i
 * del[i] -> se já foi deletado na decomposição
 */
 
-template <class T>
 class Centroid{
 public:
 	vector<vector<T> > dist;
-	vector<vi> tree;
-	vi pai;
-	vi level;
-	vector<vi> in; // problem G Dhaka
-	vector< ST<pii> > op;
+	vector<vi> tree , in; // in is vertex is subtree 
+	vi pai, level;
 	int n;
 	Centroid(int n , int LGMAX = 20){
 		this->n = n;
 		g = vector< vector<pair< int, T> > >(n+1, vector<pair<int, T>>());
 		dist = vector< vector<T> > (n+1 , vector<T>(LGMAX , numeric_limits<T>::max()));
-		tree = vector<vi> (n+1 , vi());
+		tree = in = vector<vi> (n+1 , vi());
 		level = del = sz = pai = vi(n+1);
-		in = vector<vi>(n+1, vi());
-		op = vector< ST<pii> >(n+1 , ST<pii>());
-	}
-	void initq(){
-		for(int i = 1; i <= n; i ++){
-			sort(all(in[i]));
-			op[i] = ST<pii>(sz(in[i]));
-			for(int j = 0 ; j < sz(in[i]) ; j ++){
-				op[i].upd(j,{dist[in[i][j]][level[i]] , in[i][j]});
-			}
-		}
-	}
-	pii query(int c , pii range){
-		pii cur = pii(INT_MAX, - 1);
-		int u = c;
-		while(u != -1){
-			int a = dist[c][level[u]];
-			int L = lower_bound(all(in[u]) , range.first)  - begin(in[u]), R = upper_bound(all(in[u]) , range.second) - begin(in[u]) - 1;
-			if(L <= R){
-				pii b = op[u].query(L,R);
-				cur = min(cur , {b.first + a, b.second}) ; 
-			}
-			u = pai[u];
-		}
-		return cur;
 	}
 	int calc_sz(int v,int p=-1){
 	  sz[v] = 1;
@@ -77,8 +48,7 @@ public:
 	  	tree[cent].push_back(p);
 	  	tree[p].push_back(cent);
 	  }
-	  pai[cent] = p;
-	  level[cent] = lv;
+	  pai[cent] = p , level[cent] = lv;
 	  for(auto to : g[cent]){
 	    if(del[to.F])continue;
 	    decompose(to.F,cent,lv+1);
@@ -88,7 +58,6 @@ public:
 		g[x].push_back({y,z});
 		g[y].push_back({x,z});
 	}
-
 	void build(){
 		decompose(1);
 	}

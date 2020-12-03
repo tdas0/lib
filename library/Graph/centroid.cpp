@@ -5,7 +5,7 @@
 * g[i] -> vizinhos de i
 * del[i] -> se já foi deletado na decomposição
 */
-
+template<class T>
 class Centroid{
 public:
 	vector<vector<T> > dist;

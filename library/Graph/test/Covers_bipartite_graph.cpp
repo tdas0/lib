@@ -45,6 +45,7 @@ struct bipartite_match{ // 1 indice
     }
   }
   vector<int> vertex_cover(){ // size == maximum matching
+    solve();
     vector<int> res;
     fill(all(vis),false);
     for(int i=1;i<=n;i++){

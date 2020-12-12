@@ -11,6 +11,8 @@
  */
 #pragma once
 // WARNING: WITHOUT MOD
+// add mod in product in conv, add mod in sums in the convolution, add the inverse of sz(a) in inv of xor 
+// inverse can be computed only one time.
 void FST(vi& a, bool inv) {
 	for (int n = sz(a), step = 1; step < n; step *= 2) {
 		for (int i = 0; i < n; i += 2 * step) rep(j,i,i+step) {

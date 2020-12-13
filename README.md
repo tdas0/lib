@@ -38,3 +38,4 @@ library by NaimSS, LiSA, MatheusLealV
 | 2017-2018 NEERC Subregionals          | 2020/11/07    |  18  |     12/13    |
 | 14th Chinese Northeast Collegiate PC  | 2020/11/22    |  11  |     9/12     |
 | XX Grand Prix of SPb                  | 2020/12/06    |  48  |     9/11     |
+| 2019 ICPC Asia Hong Kong Regional     | 2020/12/13    |  3   |     6/11     |

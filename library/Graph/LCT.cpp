@@ -172,3 +172,14 @@ tot += res;
 res += tot;
 if(res!=0)cout << res<<endl;
 else cout<<"balanced"<<endl;
+
+// EXEMPLO 3 Vertex add/subtree query:
+sub = val+getSub(c[0])+getSub(c[1])+vsub; // mudar isso em calc
+//add:
+LCT[p]->access();
+LCT[p]->val+=x;
+LCT[p]->calc();
+// query (se p for a raiz soma na subarvore de v):
+LCT[p]->makeRoot();
+LCT[v]->access();
+ll res = LCT[v]->vsub + LCT[v]->val;

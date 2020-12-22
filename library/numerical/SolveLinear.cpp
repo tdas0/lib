@@ -10,7 +10,7 @@
 #pragma once
 
 typedef vector<double> vd;
-const double eps = 1e-12;
+const double eps = 1e-12; // CUIRDADO COM O EPS !!! (DEPENDENDO TIRAR, SE GARANTIDA SOLUCAO)
 
 int solveLinear(vector<vd>& A, vd& b, vd& x) {
 	int n = sz(A), m = sz(x), rank = 0, br, bc;

@@ -14,7 +14,7 @@
  * Time: O(Nlog(N)*(A + B)) onde A/B é o tempo de fazer/desfazer um update na esturtura
  * Status: tested in cf
  */
-template<class T>
+template<class U>
 class ds_queue{
 public:
 	void push(U upd , auto &DS){

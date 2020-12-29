@@ -40,3 +40,4 @@ library by NaimSS, LiSA, MatheusLealV
 | XX Grand Prix of SPb                  | 2020/12/06    |  48  |     9/11     |
 | 2019 ICPC Asia Hong Kong Regional     | 2020/12/13    |  3   |     6/11     |
 | XXI OpenCup Korea, Division 1         | 2020/12/19    |  103 |     3/12     |
+| 2020-2021 ICPC, NERC                  | 2020/12/29    |  2   |     12/14    |

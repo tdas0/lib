@@ -12,7 +12,7 @@ less<pair<int, int>>,
 rb_tree_tag,
 tree_order_statistics_node_update> ordered_set; // trocar pair pelo tipo que for usar
 // ordered_set X; cria um ordered_set X
-// operações : find_by_order(k) retorna um iterador pro k-ésimo maior elemento do ordered set (0 index)
+// operações : find_by_order(k) retorna um iterador pro k-ésimo menor elemento do ordered set (0 index)
 // order_of_key(Z) retorna a quantidade de elementos estritamente menores que Z no ordered set
 /*   template<
 	  typename Key, // Key type

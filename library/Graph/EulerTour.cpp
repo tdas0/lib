@@ -18,6 +18,7 @@
   funciona com self loop (mas deve aumentar em 2 o grau/botar 2 vezes no grafo) -> tested on 527E - #296 div2
   Se for incompleto e direcionado lembrar de ver que degOut[incio] - degIn[inicio] == 1, degIn[fim] - getOut[fim]==1
   E degIn[i] == degOut[i] para todo o resto. 
+  DA REVERSE NO TOUR
   Tested on https://codeforces.com/gym/102411/problem/C and https://cses.fi/problemset/task/1693
 */
 

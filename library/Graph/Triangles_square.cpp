@@ -25,17 +25,4 @@
 			if(res>=M)res-=M;
 		}
 	}
-	// Triangulos:
-	for(int to : adj[i])vis[to]=1;
-	for(int to : g[i]){
-		for(int to2 : g[to]){
-			if(vis[to2]){
-				res+=deg[i] + deg[to] + deg[to2] - 5; // para a questao L
-        // se quiser contas triangulos dá só um ++, no caso do yosupo faz:
-        // res+=x[i]*x[to]%M*x[to2]%M;
-  		}
-		}
-	}
-	for(int to : adj[i])vis[to]=0;
-
 }

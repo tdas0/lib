@@ -19,7 +19,7 @@
 		}
 	}
 	for(int to1 : g[i]){
-		for(int to2 : adj[to1])if(id[i]<id[to2]){
+		for(int to2 : adj[to1])if(ok(i,to2)){
 			res+=cnt[to2]; // qtd de quadrados
 			cnt[to2]++;
 			if(res>=M)res-=M;

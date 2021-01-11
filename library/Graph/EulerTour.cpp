@@ -22,44 +22,47 @@
 */
 
 
-int g[N]; 
-vector<pii> grafo[N];
-vi tour;
-int del[N]; // N = max(n,m) !!!
-inline void find(int u){
-    vector<int>pilha;
-    pilha.pb(u);
-    while(!pilha.empty()){
-        int x = pilha.back();
-        while(!grafo[x].empty() and del[grafo[x].back().s]){
-            g[x]--;
-            grafo[x].pop_back();
-        }
-        if(!g[x]){
-            tour.pb(x);
-            // tour_e.pb(x.ss) ;
-            pilha.pop_back();
-            continue;
-        }
-        auto v = grafo[x].back();
-        grafo[x].pop_back();
-        g[x] --;
-        del[v.s] = 1;
-        pilha.pb(v.f);
-        // pilha.pb(v)
-    }
-}
-
-// USAGE:
-int ID = 0;
-void addEdge(int a,int b,int direcionado = 1){
-  ID++;
-  grafo[a].pb(pii(b,ID));
-  g[a]++;
-  if(!direcionado){
-    grafo[b].pb(pii(a,ID));
-    g[b]++;
-  }
-}
-//
-find(inicio);
+class EulerTour{	
+public:
+	vi tour , tour_e;
+	EulerTour() = default;
+	EulerTour(int _n , bool _directed){ 
+		dg.assign(_n+1,0);
+		g = vector< vector<pii> >(_n+1);
+		directed = _directed;
+	}
+	void addEdge(int a, int b){
+		int id = sz(del);
+		g[a].push_back({b,id});
+		del.push_back(0);
+		dg[a]++;
+		if(!directed){
+			g[b].push_back({a,id});
+			del.push_back(0);
+			dg[b]++;
+		}
+	}
+	void find(int start){
+	    vector<int> pilha = {start};
+	    while(sz(pilha)){
+	        int x = pilha.back();
+	        while(sz(g[x]) and del[g[x].back().second]){
+	            dg[x]--;
+	            g[x].pop_back();
+	        }
+	        if(!dg[x]){
+	            tour.push_back(x); 	 // tour_e.push_back(x.second) ;
+	            pilha.pop_back();
+	            continue;
+	        }
+	        auto v = g[x].back();
+	        g[x].pop_back();
+	        dg[x] -- , del[v.second] = true;
+	        pilha.push_back(v.first); 	    // pilha.push_back(v)
+	    }		
+	}
+private:
+	vi dg , del;
+	vector< vector<pii> > g;
+	bool directed = true;
+};

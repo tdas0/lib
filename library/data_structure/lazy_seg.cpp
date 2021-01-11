@@ -14,7 +14,7 @@ struct lazy_seg{
 public:
 	vector<T>  st , lazy;
 	lazy_seg(int n){
-		st.resize(4*n + 1 , 0) , lazy.resize(4*n + 1, 0);
+		st.resize(4*(n + 1)+1 , 0) , lazy.resize(4*(n + 1)+1, 0);
 	}
 	lazy_seg() = default;
 	void push(int l , int r , int curr){

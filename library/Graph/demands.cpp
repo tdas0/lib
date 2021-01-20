@@ -22,7 +22,8 @@ public:
 		h[b] += c; 
 		flow.addEdge(a,b,d-c,i);
 	}
-	bool solve(){
+	bool solve(){ // solve(s,t) se tiver source/sink
+		// flow.addEdge(t,s,inf,300000);
 		int dx = 0 , sx = 0;
 		for(int i = 1 ; i <= n; i ++){
 			if(h[i] < 0){

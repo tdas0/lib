@@ -116,7 +116,7 @@ vector<bool> matroidInsersection(Matroid& M1,Matroid& M2){ // 0 -index
 			int cur = q.front();
 			q.pop();
 			if(A[cur]){
-				trav(to,S[0])if(!pai[to] and M1.oracle(cur,to)){
+				trav(to,S[0])if(!pai[to] and M1.oracle(to,cur)){
 					pai[to] = cur;
 					q.push(to);
 				}

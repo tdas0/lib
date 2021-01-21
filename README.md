@@ -41,4 +41,5 @@ library by NaimSS, LiSA, MatheusLealV
 | 2019 ICPC Asia Hong Kong Regional     | 2020/12/13    |  3   |     6/11     |
 | XXI OpenCup Korea, Division 1         | 2020/12/19    |  103 |     3/12     |
 | 2020-2021 ICPC, NERC                  | 2020/12/29    |  2   |     12/14    |
-| 2018 Petrozavodsk Winter Camp         | 2020/01/12    |  16  |     7/11     |
+| 2018 Petrozavodsk Winter, Yandex      | 2020/01/12    |  16  |     7/11     |
+| 2019 Petrozavodsk Winter, Yandex      | 2020/01/20    |  30  |     5/10     |

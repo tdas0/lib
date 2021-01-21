@@ -1,5 +1,7 @@
 /* Source: weakest_topology,benq codes on "pick your own nim"
  * tested on "Pick your own nim" https://codeforces.com/gym/102156/problem/D
+ * Complexity: O(N^2 * R * (C1 + C2)), N = size of ground set,R = rank of intersection,
+ * C1 e C2 custos dos oráculos (abaixo C1 == 1 , C2 = 62)
  */
 struct Matroid{
 	const int n;

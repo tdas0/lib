@@ -4,7 +4,7 @@
 * testado em https://open.kattis.com/problems/rainbowgraph
 */
 
-template <class M1, class M2>
+template <class M1 = RG, class M2 = GB>
 pair<vi , vi> solve_matroid_intersection(M1&& m1, M2&& m2, int n , vi cost){
 	vector<bool> iset(n+5 , false);
 	vi ind_set , ans(n+1, (int) 1e9);
@@ -13,7 +13,7 @@ pair<vi , vi> solve_matroid_intersection(M1&& m1, M2&& m2, int n , vi cost){
 		sum += cost[i];
 	ans[tam] = min(ans[tam] , sum);
 	while (1) {
-		vi dist(n + 2, (int) 1e9);
+		vpi dist(n + 2, {(int) 1e9 , (int) 1e9});
 		vector<array<int,3>> edges;
 		vi p(n+2 , -1);
 		for(int i = 0 ; i < n; i ++){
@@ -34,15 +34,22 @@ pair<vi , vi> solve_matroid_intersection(M1&& m1, M2&& m2, int n , vi cost){
 					edges.push_back({i,n+1,-cost[i]});
 			}
 		}
-		dist[n] = 0;
+		dist[n] = {0,0};
 		while(1){
 			bool can = false;
 			for(int i = 0 ; i < sz(edges) ; i ++){
-				if(dist[edges[i][0]] < (int) 1e9){
-					if(dist[edges[i][1]] > dist[edges[i][0]] + edges[i][2]){
-						dist[edges[i][1]] = dist[edges[i][0]] + edges[i][2];
+				if(dist[edges[i][0]].first < (int) 1e9){
+					if(dist[edges[i][1]].first > dist[edges[i][0]].first + edges[i][2]){
+						dist[edges[i][1]] = {dist[edges[i][0]].first + edges[i][2] , dist[edges[i][0]].second + 1};
 						p[edges[i][1]] = edges[i][0];
 						can = true;
+					}
+					else if(dist[edges[i][1]].first == dist[edges[i][0]].first + edges[i][2]){
+						if(dist[edges[i][1]].second > dist[edges[i][0]].second + 1){
+							dist[edges[i][1]].second = dist[edges[i][0]].second + 1;
+							p[edges[i][1]] = edges[i][0];
+							can = true;
+						}
 					}
 				}
 			}
@@ -51,8 +58,7 @@ pair<vi , vi> solve_matroid_intersection(M1&& m1, M2&& m2, int n , vi cost){
 		}
 		if(p[n+1] == -1)
 			break;
-		tam --;
-		sum += dist[n+1];
+		tam -- , sum += dist[n+1].first;
 		ans[tam] = min(ans[tam] , sum);
 		int cur = n+1;
 		while(cur != -1){
@@ -60,9 +66,7 @@ pair<vi , vi> solve_matroid_intersection(M1&& m1, M2&& m2, int n , vi cost){
 				iset[cur] = iset[cur]^1;
 			cur = p[cur];
 		}
-		m1.clear();
-		m2.clear();
-		ind_set.clear();
+		m1.clear() , m2.clear() , ind_set.clear();
 		rep(i,0,n)
 			if(iset[i])
 				m1.add(i) , m2.add(i) , ind_set.push_back(i);

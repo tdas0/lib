@@ -2,6 +2,7 @@
 * Author: Tiago
 * Ta um caralho esse código, mas parece rápido, codar um swap nas matroides (oraculo de exchange)
 * testado em https://open.kattis.com/problems/rainbowgraph
+* tam e sum tão ao contrario pq esse codigo resolve pro dual
 */
 
 template <class M1 = RG, class M2 = GB>

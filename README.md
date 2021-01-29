@@ -41,5 +41,13 @@ library by NaimSS, LiSA, MatheusLealV
 | 2019 ICPC Asia Hong Kong Regional     | 2020/12/13    |  3   |     6/11     |
 | XXI OpenCup Korea, Division 1         | 2020/12/19    |  103 |     3/12     |
 | 2020-2021 ICPC, NERC                  | 2020/12/29    |  2   |     12/14    |
-| 2018 Petrozavodsk Winter, Yandex      | 2020/01/12    |  16  |     7/11     |
-| 2019 Petrozavodsk Winter, Yandex      | 2020/01/20    |  30  |     5/10     |
+| 2018 Petrozavodsk Winter, Yandex      | 2021/01/12    |  16  |     7/11     |
+| 2019 Petrozavodsk Winter, Yandex      | 2021/01/20    |  30  |     5/10     |
+
+
+## 40th Petrozavodsk Winter
+(Ranking is calculated based on onsite contestants)
+
+| Contest                               | Date          | Rank | Solved/Total |
+|---------------------------------------|:-------------:|:----:|:------------:|
+| Day 1                                 | 2021/01/29    |44/89 |     6/13     |

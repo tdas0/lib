@@ -50,4 +50,5 @@ library by NaimSS, LiSA, MatheusLealV
 
 | Contest                               | Date          | Rank | Solved/Total |
 |---------------------------------------|:-------------:|:----:|:------------:|
-| Day 1                                 | 2021/01/29    |44/89 |     6/13     |
+| Jagiellonian, Grand Prix of Krakow    | 2021/01/29    |44/89 |     6/13     |
+

@@ -51,4 +51,4 @@ library by NaimSS, LiSA, MatheusLealV
 | Contest                               | Date          | Rank | Solved/Total |
 |---------------------------------------|:-------------:|:----:|:------------:|
 | Jagiellonian, Grand Prix of Krakow    | 2021/01/29    |44/89 |     6/13     |
-
+| UPC Contest                           | 2021/01/30    |50/98 |     7/12     |

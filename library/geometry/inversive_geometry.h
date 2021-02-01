@@ -23,7 +23,7 @@ long double dist(P a, P b){
 	return sqrt((a.x-b.x)*(a.x-b.x) + (a.y - b.y)*(a.y-b.y));
 }
 
-//NUNCA PERGUNTAR O INVERSO DE P
+//NUNCA PERGUNTAR O INVERSO DO CENTRO
 P InversiveFromCircle(P o, long double r, P p) {
 	assert(!(o == p));
 	long double OP = dist(o, p);

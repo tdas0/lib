@@ -10,7 +10,7 @@
    se O = P -> Inverso eh infinito, entao temos uma circunferencia centrada em infinito (uma reta), onde a parte interna eh um semiplano
    que nao possui o centro O dentro
  * Status: tested with 40th Petrozavodsk camp - day2 F. Friendship circles
- * Time: O(n \log n)
+ * Time: O(1)
 */
 #pragma once
 

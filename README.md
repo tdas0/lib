@@ -54,3 +54,4 @@ library by NaimSS, LiSA, MatheusLealV
 | UPC Contest                           | 2021/01/30    |50/98 |     7/12     |
 | NCPC 2020                             | 2021/01/31    |45/95 |     7/12     |
 | ICPC Training day 1                   | 2021/02/02    |36/243|     3/10     |
+| ICPC Training day 2, almost retired   | 2021/02/03    |49/206|     5/13     |

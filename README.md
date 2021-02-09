@@ -58,4 +58,4 @@ library by NaimSS, LiSA, MatheusLealV
 | PKU Contest 2                         | 2021/02/04    |50/99 |     6/10     |
 | North American Contest 1              | 2021/02/06    |44/92 |     8/14     |
 | Belarusian SU contest, Yandex cup     | 2021/02/07    |51/90 |     7/14     |
-| Day 6 (???)                           | 2021/02/08    |53/91 |     3/11     |
+| Day 9 (???)                           | 2021/02/08    |53/91 |     3/11     |

@@ -1,34 +1,35 @@
 /**
- * Author: Tiago Domingos
- * Date: 14/02/2020
+ * Author: Stjepan Glavina, chilli
+ * Date: 2019-05-05
+ * License: Unlicense
+ * Source: https://github.com/stjepang/snippets/blob/master/convex_hull.cpp
  * Description:
-	Return points in CCW order, using graham scan, if you want collinears, change <= to < in the pop_back part and 
-	remove (hull[back] == hull[0]) part
- * Status: tested with Kattis problems convexhull 
+\\\begin{minipage}{75mm}
+Returns a vector of the points of the convex hull in counter-clockwise order.
+Points on the edge of the hull between two other points are not considered part of the hull.
+\end{minipage}
+\begin{minipage}{15mm}
+\vspace{-6mm}
+\includegraphics[width=\textwidth]{content/geometry/ConvexHull}
+\vspace{-6mm}
+\end{minipage}
  * Time: O(n \log n)
+ * Status: stress-tested, tested with kattis:convexhull
 */
 #pragma once
 
 #include "Point.h"
 
+typedef Point<ll> P;
 vector<P> convexHull(vector<P> pts) {
 	if (sz(pts) <= 1) return pts;
-	P pivot = pts[0];
-	rep(i,0,sz(pts)) pivot = min(pivot , pts[i]);
-	sort(all(pts) , [&](P a , P b){
-		a = a - pivot , b = b - pivot;
-		int hp1 = a < P(0,0) , hp2 = b < P(0,0);
-		if(hp1 != hp2) return hp1 < hp2;
-		if(a.cross(b) != 0){
-			return a.cross(b)  > 0;
+	sort(all(pts));
+	vector<P> h(sz(pts)+1);
+	int s = 0, t = 0;
+	for (int it = 2; it--; s = --t, reverse(all(pts)))
+		for (P p : pts) {
+			while (t >= s + 2 && h[t-2].cross(h[t-1], p) <= 0) t--;
+			h[t++] = p;
 		}
-		return a.dist2() < b.dist2();
-	});
-	vector<P> hull;
-	rep(i,0,sz(pts)){
-		while(hull.size() > 1 && ((hull.back() - hull[sz(hull) - 2]).cross(pts[i] - hull.back()) <= 0)) hull.pop_back();
-		hull.push_back(pts[i]);
-	}
-	if(hull.back() == hull[0]) hull.pop_back();
-	return hull; 
+	return {h.begin(), h.begin() + t - (t == 2 && h[0] == h[1])};
 }

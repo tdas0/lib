@@ -18,12 +18,10 @@ struct ST{
   T ini; 
   ST(){}
   ST(int n , T ini) : st(2*n , ini) , n(n) , ini(ini) {}
-  void upd(int pos, T val){ // pos 0index - ADICIONA VAL / NAO MUDA O VALOR PRA VAL
+  void upd(int pos, T val){ // pos 0index // SOMAR e NAO MUDAR
     pos+=n;
-    st[pos] = st[pos] + val; 
-    //cout << "here "<<pos<<" "<<st[pos].x<<endl;
-    for(; pos /= 2;)
-      st[pos] = st[2*pos] + st[2*pos + 1];
+    for(st[pos] = st[pos] + val ; pos /= 2;)
+          st[pos] = st[2*pos] + st[2*pos + 1];
   }
   T query(int x , int y){ // [x,y] , x, y -0index
     T ra = ini , rb = ini;
@@ -35,31 +33,27 @@ struct ST{
   }
 };
 
-template<class T>
-struct ST_2D{
-  vector<ST<T> > st;
+
+template <class T>
+struct ST2D{
+  vector<ST<T>> st; 
   int n,m; 
-  T ini;
-  ST_2D(){}
-  ST_2D(int nn, int mm,T iini){
-    n=nn;
-    m=mm;
-    ini = iini;
-    st = vector<ST<T> >(2*n , ST<T>(m,ini));
+  T ini; 
+  ST2D() = default;
+  ST2D(int n ,int m, T ini):m(m),n(n),ini(ini),st(2*n,ST<T>(m,ini)){
   }
-  void upd(int i,int pos,node val){ // pos 0index
-      for(st[i+=n].upd(pos,val);i/=2;){
-        st[i].upd(pos,val);
-      }
-  }
-  T query(int Li,int Lj,int Ri,int Rj){ // [x,y] , x, y -0index
-    //assert(Li<n and Ri<n and Lj<m and Rj<m);
-    T res = ini;
-    int x = Li,y = Ri;
-    for(x += n, y += n+1 ; x < y ; x/=2 , y/=2){
-      if(x&1) res = res + st[x].query(Lj,Rj) , x++;
-      if(y&1) --y , res = st[y].query(Lj,Rj) + res;
+  void upd(int pos,int y, T val){ // pos 0index
+    assert(pos<n and y<m);
+    for(st[pos += n].upd(y,val) ; pos /= 2;){
+      st[pos].upd(y,val);
     }
-    return res;
+  }
+  T query(int x , int y,int l,int r){ // [x,y] , x, y -0index
+    T ra = ini , rb = ini;
+    for(x += n, y += n+1 ; x < y ; x/=2 , y/=2){
+      if(x&1) ra = ra + st[x].query(l,r) , x++;
+      if(y&1) --y , rb = st[y].query(l,r) + rb;
+    }
+    return ra + rb;
   }
 };

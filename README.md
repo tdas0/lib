@@ -43,7 +43,9 @@ library by NaimSS, LiSA, MatheusLealV
 | 2020-2021 ICPC, NERC                  | 2020/12/29    |  2   |     12/14    |
 | 2018 Petrozavodsk Winter, Yandex      | 2021/01/12    |  16  |     7/11     |
 | 2019 Petrozavodsk Winter, Yandex      | 2021/01/20    |  30  |     5/10     |
-
+| 2020 Asia Seoul Regional Contest      | 2021/02/28    |  5   |     10/12    |
+ 
+ 
 
 ## 40th Petrozavodsk Winter
 (Ranking is calculated based on onsite contestants)

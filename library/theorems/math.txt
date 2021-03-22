@@ -91,3 +91,17 @@ k(5)=20,k(2)=3,k(3)=8
 Se p>5:
 k(p) divide (p-1) se p == +-1 mod 5
 k(p) divide 2*(p+1) se p==+-2 mod 5
+
+Diofantinas:
+ax + by = c
+divide tudo pelo gcd(a,b); se c%gcd(a,b)!=0, não tem solução
+se não:
+a' x + b' y = c' tem solução dada pelo algoritmo de euclides
+a resposta do problema original é:
+(X_g * c/g, Y_g * c/g), com X_g e Y_g achados com euclides.
+OBS: passa abs(a) e abs(b) no euclides e depois inverter o sinal
+se era negativo.
+
+Toda solução é na forma
+x = x0 + k * b'
+y = y0 - k * a'

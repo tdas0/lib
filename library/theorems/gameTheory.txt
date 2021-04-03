@@ -1,0 +1,8 @@
+Nim-K: Nim podendo tirar de K heaps, aka Moore’s Nimk
+Se soma xi mod (k+1) == 0 pra todo bit i, é uma P position.
+
+Monotonic Nim:
+Se n é impar pega o xor de (a(2*i+1) - a(2*i)), se não insere um 0 no inicio e repete.
+
+Misere Nim:
+É uma P position se: existe ai>1 e xor == 0 ou ai==1 e xor == 1.

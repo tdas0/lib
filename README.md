@@ -47,6 +47,7 @@ library by NaimSS, LiSA, MatheusLealV
 | Northern Eurasia Finals Online 2020   | 2021/03/19    |  79  |     7/15     |
 | The 2019 China CPC Harbin Site        | 2021/03/25    |  56  |     7/12     |
 |Samara Farewell Contest 2020           | 2021/04/03    |  31  |     9/14     |
+|2020 ICPC Asia Taipei-Hsinchu SPC      | 2021/04/11    |  3   |     10/13    |
 
 
 ## 40th Petrozavodsk Winter

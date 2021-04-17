@@ -25,4 +25,17 @@
 			if(res>=M)res-=M;
 		}
 	}
+	 
+	// triangulo:
+	for(int to : adj[i])vis[to]=1;
+
+  	for(int to : g[i]){
+  		for(int to2 : g[to]){
+  			if(vis[to2]){
+  				res++;
+  			}
+  		}
+  	}
+
+  	for(int to : adj[i])vis[to]=0;
 }

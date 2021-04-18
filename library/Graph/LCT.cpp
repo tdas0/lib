@@ -183,3 +183,27 @@ LCT[p]->calc();
 LCT[p]->makeRoot();
 LCT[v]->access();
 ll res = LCT[v]->vsub + LCT[v]->val;
+
+
+// EXEMPLO 4: Path sum - path query
+// adicionar em prop:
+void prop() { // lazy prop
+if(lazy){
+      val+=lazy;
+      sum+=lazy * sz;
+      rep(i,0,2)if(c[i])c[i]->lazy+=lazy;
+      lazy=0;
+ }
+...
+}
+void update(int a,int b,int v){
+  LCT[a]->makeRoot();
+  LCT[b]->access();
+  LCT[b]->lazy+=v;
+  LCT[b]->access();
+}
+int query(int a,int b){
+  LCT[a]->makeRoot();
+  LCT[b]->access();
+  return LCT[b]->sum;
+}

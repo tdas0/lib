@@ -48,7 +48,7 @@ library by NaimSS, LiSA, MatheusLealV
 | The 2019 China CPC Harbin Site        | 2021/03/25    |  56  |     7/12     |
 |Samara Farewell Contest 2020           | 2021/04/03    |  31  |     9/14     |
 |2020 ICPC Asia Taipei-Hsinchu SPC      | 2021/04/11    |  3   |     10/13    |
-
+| SWERC 2020-2021                       | 2021/04/23    |  13  |     9/13     |                         
 
 ## 40th Petrozavodsk Winter
 (Ranking is calculated based on onsite contestants)

@@ -49,6 +49,8 @@ library by NaimSS, LiSA, MatheusLealV
 |Samara Farewell Contest 2020           | 2021/04/03    |  31  |     9/14     |
 |2020 ICPC Asia Taipei-Hsinchu SPC      | 2021/04/11    |  3   |     10/13    |
 | SWERC 2020-2021                       | 2021/04/23    |  13  |     9/13     |                         
+| XXI Open Cup, Grand Prix of Nanjing   | 2021/04/31    |  55  |     7/13     |
+
 
 ## 40th Petrozavodsk Winter
 (Ranking is calculated based on onsite contestants)

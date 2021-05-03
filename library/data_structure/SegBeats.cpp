@@ -13,6 +13,7 @@
  * Para toda query é aumentado em O(1) a quantidade de valores distintos.
  * Então eu só não paro O((N + Q)*logN) vezes.
  * OBS: Declarar global para nao dar stack overflow ou mudar para um vector inves de array
+ * Se quiser só "CHMAX", pode tirar o setmn e tirar a variável de max.
  * Status:
  * Tested on https://old.yosupo.jp/problem/range_chmin_chmax_add_range_sum
  * Referencias: 

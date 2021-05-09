@@ -105,3 +105,7 @@ se era negativo.
 Toda solução é na forma
 x = x0 + k * b'
 y = y0 - k * a'
+
+Choromatic polynomial of a cycle:
+numero de modos de pintar um ciclo de tamanho n com K cores: (k-1)^n + (-1)^n * ( k-1 )
+pode achar com expo tb se precisar...

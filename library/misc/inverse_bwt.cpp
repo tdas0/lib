@@ -1,4 +1,10 @@
-// Invert BWT (add details)
+// Invert BWT
+// Given a Burrows-Wheeler Transform, return the original string
+// BWT(S) = concat of last chars of sorted array of every cyclical rotation of S
+// {abcd , dabc , cdab , bcda}
+// sorting : 
+// {abcd , bcda , cdab , dabc}
+// BWT(abcd) = dabc
 
 string inverse_bwt(string s){
 	vector<pair<int,int>> v;

@@ -7,14 +7,17 @@
 * Duas arvores rooteadas são iguais se elas retornam o mesmo valor para a mesma seed e mod
 */
 
+
+/*
+	Depth should be global
+*/
+
 template <class T>
 class tree_isomorphism{
 public:
-	tree_isomorphism(int _n , T _mod , long long seed){
-		n = _n , mod = _mod , rng = mt19937(seed);
-		g = vector< vector<int> >(n+1) , depth = vector<T>(n+1);
-		for(int i = 0 ; i <= n ; i ++)
-			depth[i] = rng();
+	tree_isomorphism(int _n , T _mod){
+		n = _n , mod = _mod;
+		g = vector< vector<int> >(n+1);
 	}
 	tree_isomorphism() = default;
 	void addEdge(int u , int v){
@@ -33,7 +36,5 @@ public:
 private:
 	int n;
 	T mod;
-	vector<T> depth;
 	vector< vector<int> > g;
-	mt19937 rng;
 };

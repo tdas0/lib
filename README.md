@@ -51,6 +51,7 @@ library by NaimSS, LiSA, MatheusLealV
 | SWERC 2020-2021                       | 2021/04/23    |  13  |     9/13     |                         
 | XXI Open Cup, Grand Prix of Nanjing   | 2021/04/31    |  55  |     7/13     |
 | NWERC 2020                            | 2021/05/16    |  6   |     10/11    |
+| SEERC 2020                            | 2021/05/16    |  9   |      6/13    |
 
 ## 40th Petrozavodsk Winter
 (Ranking is calculated based on onsite contestants)

@@ -1,4 +1,6 @@
 // build O(N),busca lixo kkk
+// menor cara é a raiz, L[i] e R[i] são os filhos (menores após excluir o pai no range)
+
 	int root = 0;
 	for(int i=1;i<=n;i++){
 			int ant = i-1;

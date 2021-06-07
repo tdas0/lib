@@ -7,6 +7,7 @@
 \\\begin{minipage}{75mm}
 Returns a vector of the points of the convex hull in counter-clockwise order.
 Points on the edge of the hull between two other points are not considered part of the hull.
+Se quiser incluir, mudar <= para < e aumentar sz para 2*sz(pts)+1
 \end{minipage}
 \begin{minipage}{15mm}
 \vspace{-6mm}

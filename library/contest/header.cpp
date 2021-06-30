@@ -26,3 +26,7 @@ ll fdiv(ll a, ll b) { return a/b-((a^b)<0&&a%b); } // divide a by b rounded down
 // g++ -g a.cpp --std=c++17 -Wall -Wextra -Wno-unused-result -Wconversion -Wfatal-errors -o a.out
 // -fsanitize=undefined,address (dont abuse, slow compiling)
 // ulimit -s unlimited (change stack size)
+
+
+// naim:
+// g++ -g b.cpp --std=c++17 -Wall -Wextra -Wno-unused-result -Wconversion -Wfatal-errors -fsanitize=undefined,address && ./a.out 

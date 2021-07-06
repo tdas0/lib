@@ -35,7 +35,7 @@ void build(pnode no,int i,int j){
 void upd(pnode no,pnode old,int i,int j,int p,int v){
 
   if(i == j){
-    no->sum = old->sum + 1; // PARA SOMA DOS K MAIORES, FAÇA no->sum = old->sum + 1
+    no->sum = old->sum + v; // PARA SOMA DOS K MAIORES, FAÇA no->sum = old->sum + 1
     no->vl = v; // PODE TIRAR SE NÃO FOR USAR SOMA DOS K MAIORES 
     no->tot = old->tot + v;//  PODE TIRAR SE NÃO FOR USAR SOMA DOS K MAIORES 
     return;

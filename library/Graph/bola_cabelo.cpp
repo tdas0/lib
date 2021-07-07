@@ -10,7 +10,6 @@ int vis[N], tin[N], tout[N], total[N], tmp_cnt=0;
 int componente[N], prox[N], grau[N], id_pai[N], dist_pai[N], dist_ciclo[N], len_ciclo[N];
 int prefixo[N], tripinha[N]; // um vértice é tripa se nao ta no ciclo xD
 vector<int> chega[N];
-vector< vector<int> > tripas;
 
 // 1-indexado
 struct bola_cabelo{

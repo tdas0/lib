@@ -18,7 +18,6 @@ struct bola_cabelo{
 	
 	void init(int numv = 0){
 		numVertices = numv;
-		// FICA NLOGN CASO FOR USAR BIN LIFT
 	}
 	void addAresta(int a, int b, int peso = 1){
 		prox[a] = b; dist_pai[a] = peso;

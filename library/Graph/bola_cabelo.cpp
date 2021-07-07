@@ -1,4 +1,5 @@
 /*
+  Quando peso != 1 não foi bem testado, tomar cuidado!
   tripinha[x] = 1 se é tripa (nao ciclo) 0 caso contrário
   len_ciclo[x] = tamanho do ciclo que o x liga
   prefixo[x] = distancia de x para o ciclo(caso x for tripa), prefixo do ciclo caso x ta no ciclo

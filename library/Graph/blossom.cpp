@@ -5,6 +5,8 @@
  	* max matching.
  * Time: O(N^3), faster in practice
  * Source: 
+ 	bqi343 (benq https://github.com/bqi343/USACO/blob/master/Implementations/content/graphs%20(12)/Matching/UnweightedMatch.h)
+	for weighted see (https://github.com/bqi343/USACO/blob/master/Implementations/content/graphs%20(12)/Matching/WeightedMatch.h)
 	* https://github.com/koosaga/DeobureoMinkyuParty
 	* https://www-m9.ma.tum.de/graph-algorithms/matchings-blossom-algorithm/index_en.html
 	* https://codeforces.com/blog/entry/63630

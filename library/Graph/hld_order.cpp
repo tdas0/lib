@@ -7,6 +7,7 @@
  * update_subtree aplica v na subarvore (mudar seg pra mudar a aplicação)
  * update_path se c== 0 atualiza as arestas, se c == 1 atualiza os nós do path
  * query_path se c== 0 da query nas arestas, se c== 1 query nos paths do nó
+ * segments retorna na ordem de u->v as perguntas na seg, se l > r em algum range, então tem que perguntar em uma segtree que da merge na ordem reversa
  * Status:tested (not heavily)
  */
 

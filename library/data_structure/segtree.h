@@ -34,3 +34,9 @@ struct ST{
 		return (okl ? (okr ? ra + rb : ra): rb);
 	}
 };
+
+/* BUILD O(N) - opcional:
+void build() { // no inicio st[i+n] = a[i], 0 <= i < n
+        for (int i = n - 1; i > 0; --i) st[i] = st[i * 2] + st[i*2 + 1];
+}
+*/

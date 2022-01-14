@@ -1,4 +1,6 @@
 // tested on cses and grupo da summer
+// vertex cover also tested at https://codeforces.com/contest/1525/problem/F
+
 struct bipartite_match{ // 1 indice
   int n , m;
   vector<vi> g; vi vis , match;

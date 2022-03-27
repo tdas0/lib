@@ -1,3 +1,18 @@
+## Era 2
+Você beijaria Matheus Leal Viana
+================
+library by Naim, tdas and yan.silva
+
+## Training
+(Ranking is calculated based on onsite contestants)
+
+| Contest                               | Date          | Rank | Solved/Total |
+|---------------------------------------|:-------------:|:----:|:------------:|
+| Colombia 2021                         | 2022/03/19    |  19  |    11/13     |
+| 2021 Jiangsu                          | 2022/03/26    |  69  |     6/12     |
+
+
+
 namae wa?
 ================
 
@@ -69,16 +84,5 @@ library by NaimSS, LiSA, MatheusLealV
 | Belarusian SU contest, Yandex cup     | 2021/02/07    |51/90 |     7/14     |
 | Grand Prix of Suwon                   | 2021/02/08    |53/91 |     3/11     |
 
-## Era 2
-Você beijaria Matheus Leal Viana
-================
-library by Naim, tdas and yan.silva
 
-## Training
-(Ranking is calculated based on onsite contestants)
-
-| Contest                               | Date          | Rank | Solved/Total |
-|---------------------------------------|:-------------:|:----:|:------------:|
-| Colombia 2021                         | 2022/03/19    |  19  |    11/13     |
-| 2021 Jiangsu                          | 2022/03/26    |  69  |     6/12     |
 

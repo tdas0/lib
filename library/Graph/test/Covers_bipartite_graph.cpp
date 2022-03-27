@@ -46,6 +46,8 @@ struct bipartite_match{ // 1 indice
       }
     }
   }
+  // a vertex cover of a graph is a set of vertices that 
+  // includes at least one endpoint of every edge of the graph.
   vector<int> vertex_cover(){ // size == maximum matching
     solve();
     vector<int> res;
@@ -79,6 +81,8 @@ struct bipartite_match{ // 1 indice
     assert(sz(res) == n - solve());
     return res;
   }
+  // an edge cover of a graph is a set of edges such that every vertex of
+  // the graph is incident to at least one edge of the set.
   //status: tested:
   vector<pii> edge_cover(){ // size == number of not isolated vertices - maximum matching
     solve();

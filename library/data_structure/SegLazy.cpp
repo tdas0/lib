@@ -30,7 +30,7 @@ public:
 	SegmentTree() = default;
 	SegmentTree(int n, U identity , L zero){
 		tagLazy.assign(4*n+2, 0);
-		node.resize(4*n+2), lazy.resize(4*n+2);
+		node.resize(4*n+2,identity), lazy.resize(4*n+2,zero);
 		node[0] = identity;
 		lazy[0] = zero;
 	}	

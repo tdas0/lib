@@ -1,0 +1,5 @@
+- Algum loop infito? Caso base de recursão
+- 
+- Fast input
+- Evitar usando ponteiros; Tentar estatizar
+- 

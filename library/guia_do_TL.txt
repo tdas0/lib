@@ -3,3 +3,8 @@
 - Fast input
 - Evitar usando ponteiros; Tentar estatizar
 - 
+
+- Loops infinitos:
+ - .size() -1 -> se size for 0 fica infinito. Usar (int)v.size()
+ - next(it) ou prev(it) no end/begin é UB
+ - Complexidade tá certa mesmo?

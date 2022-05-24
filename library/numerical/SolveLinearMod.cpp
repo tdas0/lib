@@ -6,7 +6,7 @@
  * Description: Solves $Ax = b$ over $\mathbb F_2$. If there are multiple solutions, one is returned arbitrarily.
  *  Returns rank, or -1 if no solutions. Destroys $A$ and $b$.
  * Funciona em Z/Zp ou qualquer campo com inverso existente
- * Cuidaod com ll vs int
+ * !!! Cuidado com ll vs int
  * Time: O(n^2 m)
  * Status: bruteforce-tested for n, m <= 4
  */

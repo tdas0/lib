@@ -12,6 +12,7 @@ library by Naim, tdas and yan.silva
 | 2021 Jiangsu                          | 2022/03/26    |  69  |     6/12     |
 | SWERC 2021-2022                       | 2022/05/01    |  57  |     9/15     |
 | Asia Macau 2020                       | 2022/05/22    |  73  |     6/12     |
+| SEERC 2018                            | 2022/06/05    |  43  |     7/11     |
 
 
 

@@ -13,6 +13,9 @@ library by Naim, tdas and yan.silva
 | SWERC 2021-2022                       | 2022/05/01    |  57  |     9/15     |
 | Asia Macau 2020                       | 2022/05/22    |  73  |     6/12     |
 | SEERC 2018                            | 2022/06/05    |  43  |     7/11     |
+| Maratona mineira 2022                 | 2022/06/16    |  2   |     14/14    |
+| ASC 43                                | 2022/06/19    |  20  |     8/12     |
+
 
 
 

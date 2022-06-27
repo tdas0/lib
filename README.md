@@ -15,6 +15,7 @@ library by Naim, tdas and yan.silva
 | SEERC 2018                            | 2022/06/05    |  43  |     7/11     |
 | Maratona mineira 2022                 | 2022/06/16    |  2   |     14/14    |
 | ASC 43                                | 2022/06/19    |  20  |     8/12     |
+| 2022 Jiangsu CPC                      | 2022/06/27    |  23  |     7/12     |
 
 
 

@@ -1,5 +1,5 @@
 vl log(vl A , int n){
-	assert(sz(A) != 0 && A[0] != 0);
+	assert(sz(A) != 0 && A[0] == 1);
 	vl P(n,0) , ans(n,0);
 	vl fat(n,1);
 	for(int i = 1; i < n ; i ++){

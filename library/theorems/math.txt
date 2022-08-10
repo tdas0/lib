@@ -48,6 +48,7 @@ Distribuicao binomial com n tentativas de probabilidade p, X = sucessos:
 Distribuicao geometrica onde continuamos ate ter sucesso, X = tentativas: 
     P(X = x) = (1-p)^(x-1) * p e E[X] = 1/p
 Linearity of expectation: Tendo duas variaveis X e Y e constantes a e b, o valor esperado de aX + bY = a*E[X] + b*E[X]
+Hugher order distributions: ${E} [X^{c}]=\sum _{k=0}^{c}\left\{{c \atop k}\right\}n^{\underline {k}}p^{k}$ where $n^{\underline {k}}=n(n-1)\cdots (n-k+1)}$ is the kth falling power of n.
 
 (1 + x)^(-n) = somatorio( ( (-1)^k ) * ( (n + k - 1) escolhe k) * (x ^ k) ), k = 0 até k = inf
 

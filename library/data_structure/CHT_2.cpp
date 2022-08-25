@@ -4,8 +4,9 @@
  * License: ??
  * Source: own work
  * Description: Faz todas as operacoes em O(1) armotizado, porem eh necessario que
- * os coeficientes angulares das retas estejam ordenados na ordem que insere, assim como os "x" das queries
+ * os coeficientes angulares das retas estejam ordenados (decrescente) na ordem que insere, assim como os "x" das queries (crescente)
  * Time: O(N) total, O(1) por query
+ * Tested on https://codeforces.com/contest/1715/problem/E
  * Status: stress-tested
  */
 

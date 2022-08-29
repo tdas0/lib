@@ -1,4 +1,13 @@
-#include "SuffixArray.h"
+/**
+ * Description: Find all $(i,p)$ such that 
+ 	* \texttt{s.substr(i,p) == s.substr(i+p,p)}. No two intervals
+ 	* with the same period intersect or touch.
+	* getLCP must deal with cases i==j (n-i) and max(i,j)>=n (return 0)
+	* Equivalent to normal lcp queries besides that
+ * Time: O(N\log N)
+ * Source: https://codeforces.com/gym/102012/submission/54638473
+ * Verification: GP of Nanjing 2020 D - String Theory
+ */
 
 vector<array<int,3>> solve(str s) {
 	int N = sz(s); SuffixArray A,B; 

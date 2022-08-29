@@ -21,6 +21,7 @@ std::mt19937 rng((int) std::chrono::steady_clock::now().time_since_epoch().count
 ll cdiv(ll a, ll b) { return a/b+((a^b)>0&&a%b); } // divide a by b rounded up
 ll fdiv(ll a, ll b) { return a/b-((a^b)<0&&a%b); } // divide a by b rounded down
 
+#define Unique(v) sort(all(v));v.erase(unique(all(v)),v.end());
 
 // Pretty good compilation command:
 // g++ -g a.cpp --std=c++17 -Wall -Wextra -Wno-unused-result -Wconversion -Wfatal-errors -o a.out

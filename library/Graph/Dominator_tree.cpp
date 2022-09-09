@@ -10,6 +10,7 @@
  * for(auto to : Dominator::tree[v])//....
  * Status: Tested on codeforces and cses critical cities - https://cses.fi/paste/bd9ebff02db7215412f6fd/
  * Tested on https://judge.yosupo.jp/
+ * Tested on NEERC 14-15 L
  */
  // From https://codeforces.com/group/W2YvE0cOoh/contest/284785/problem/E
 
@@ -41,8 +42,8 @@ namespace Dominator{
   }
   void reset(int n){
     for(int i=1;i<=n;i++){
-      g[i].clear();rg[i].clear();tree[i].clear();arr[i]=0;
-      bucket[i].clear(); // reset BADLY TESTED
+      g[i].clear();rg[i].clear();tree[i].clear();bucket[i].clear();
+	     arr[i]=0;
     }
     T=0;
   }

@@ -42,6 +42,7 @@ namespace Dominator{
   void reset(int n){
     for(int i=1;i<=n;i++){
       g[i].clear();rg[i].clear();tree[i].clear();arr[i]=0;
+      bucket[i].clear(); // reset BADLY TESTED
     }
     T=0;
   }

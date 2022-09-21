@@ -16,7 +16,9 @@ library by Naim, tdas and yan.silva
 | Maratona mineira 2022                 | 2022/06/16    |  2   |     14/14    |
 | ASC 43                                | 2022/06/19    |  20  |     8/12     |
 | 2022 Jiangsu CPC                      | 2022/06/27    |  23  |     7/12     |
-
+| XX Open Cup, Grand Prix of Nanjing    | 2022/08/29    |  93  |     4/13     |
+| Grand Prix of Southeastern Europe     | 2022/09/07    |  69  |     7/14     |
+| ASC 40 (only naimss and yan.silva)    | 2022/09/19    |  31  |     7/10     |
 
 
 

@@ -21,10 +21,10 @@ public:
 		h = vi(n+3, 0);
 		flow = Dinic(n+3);
 	}
-	void addEdge(int a , int b , int c , int d , int i){
-		h[a] -= c;
-		h[b] += c; 
-		flow.addEdge(a,b,d-c,i);
+	void addEdge(int a , int b , int L , int R , int i){
+		h[a] -= L;
+		h[b] += L; 
+		flow.addEdge(a,b,R-L,i);
 	}
 	bool solve(){ // solve(s,t) se tiver source/sink
 		// forçar que possa circular o máximo de fluxo entre sink e source:

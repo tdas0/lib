@@ -3,6 +3,12 @@ Você beijaria Matheus Leal Viana?
 ================
 library by Naim, tdas and yan.silva
 
+## Onsite Contest
+| Contest                     | Date          | Rank | Solved/Total |
+|-----------------------------|:-------------:|:----:|:------------:|
+| Fase zero da maratona       | 2021/09/24    |   1  |     12/12    |
+| Latam Subregional 2020      | 2022/10/08    |   1  |     13/14    |
+
 ## Training
 (Ranking is calculated based on onsite contestants)
 

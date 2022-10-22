@@ -1,10 +1,10 @@
 /* Source: Aeren's library
- * Chinese Remainder Theorem (Return a number x which satisfies x = a mod m & x = b mod n)
+ * Description: Chinese Remainder Theorem (Return a number x which satisfies x = a mod m & x = b mod n)
  * All the values has to be less than 2^30
  * Retorna o menor X >=0 que satisfaz ou -1 se não tem resposta
- * Como provar: a1 + b1 * k1 == a2 + b2 * k2 -> (a1-a2)== -b1*x + b2*y
+ * a1 + b1 * k1 == a2 + b2 * k2 -> (a1-a2)== -b1*x + b2*y
  * Isso vira uma equação diofantina.
- * O(log(N + M)
+ * Time: O(log(N + M)
  * the resulting modulo is LCM(n,m)
  * Status: tested on kattis
  */

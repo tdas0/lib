@@ -1,7 +1,9 @@
-/* Author: Common knowledge
- * Description: Crivo para decompor numeros no range [L,R] , R<=10^12 para casos de R-L pequeno i.e R-L<=1e6
+/**
+ * Author: Common knowledge
+ * Description: Crivo para decompor numeros no range [L,R] , $R<=10^12$
  * Precisa precomputar os primos menores que sqrtR com outro crivo
  * Após o crivo, mark[i-l] tem 1 se i não for primo, caso contrário, mark[i-l] é um primo.
+ * Time: O(R-L + SQRT(R))
  * Status: Tested on Petrozavodsk Summer-2017. Songyang Chen Contest 1 - problem C
  */
 const int N = 1e6 + 100; // N>=sqrt(MaxR)
@@ -28,7 +30,7 @@ void crivo_segmentado(ll l,ll r){
 	}
 	
 	for(ll i = l;i<=r;i++){
-	  if(mark2[i-l]!=1){//é um primo > Sqrt
+	  if(mark2[i-l]!=1){//eh um primo > Sqrt
 		ans[i-l] = ans[i-l] * (1 + 1) %M;    
 	  }
 	}

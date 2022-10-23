@@ -1,11 +1,14 @@
-/* Fluxo com demandas. Resolve o problema da circulação: Achar fluxo (entrada = saida) que satisfaz demandas,
-* sem necessariamente uma sink e source. 
-* Dinic() precisa ter id na struct (modificar o addEdge pra receber(a,b,cap,id)) caso queira recuperar
-* os fluxos nas arestas. Deixar ids invalidos nas arestas extras e nas arestas do grafo residual
-* Resolve pra arestas que tem lower bound e upper bound o maxflow
-* consegue resolver também pra demanda nos nós, h[x] representa a demanda do nó x
-* Para mincost-maxflow primeiro ache o fluxo máximo m. Depois adicionar edge: (source,sink,lower = m,upper = m,custo = 0)
-*/
+/** 
+ * Author: tdas
+ * Description: Solves the circulation problem with demans.
+ * Sem necessariamente uma sink e source. 
+ * Dinic() precisa ter id na struct (modificar o addEdge pra receber(a,b,cap,id)) caso queira recuperar
+ * os fluxos nas arestas. Deixar ids invalidos nas arestas extras e nas arestas do grafo residual
+ * Resolve pra arestas que tem lower bound e upper bound o maxflow
+ * consegue resolver também pra demanda nos nós, h[x] representa a demanda do nó x
+ * Para mincost-maxflow primeiro ache o fluxo máximo m. 
+ * Depois adicionar edge: (source,sink,lower = m,upper = m,custo = 0)
+ */
 class Demands{
 public:
 	Demands(int n){
@@ -20,7 +23,6 @@ public:
 		flow.addEdge(a,b,R-L,i);
 	}
 	bool solve(){ // solve(s,t) se tiver source/sink
-		// forçar que possa circular o máximo de fluxo entre sink e source:
 		// flow.addEdge(t,s,inf,300000); 
 		int dx = 0 , sx = 0;
 		for(int i = 1 ; i <= n; i ++){

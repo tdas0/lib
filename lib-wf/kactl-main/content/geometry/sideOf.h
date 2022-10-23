@@ -8,7 +8,6 @@
  * 	bool left = sideOf(p1,p2,q)==1;
  * Status: tested
  */
-#pragma once
 
 #include "Point.h"
 

@@ -1,11 +1,14 @@
-// tested on cses and grupo da summer
-// vertex cover also tested at https://codeforces.com/contest/1525/problem/F
+/**
+ * Author: Naim e tdas
+ * Description: fast kuhn + alguns covers
+ * Time: O(VE) but pretty fast actually. random shuffle?
+ */
 
-struct bipartite_match{ // 1 indice
+struct bipartiteMatch{ // 1 indice
   int n , m;
   vector<vi> g; vi vis , match;
   int ans=0;
-  bipartite_match(int n , int m) : n(n) , m(m), vis(n+m+2) , match(n+m+2) , g(n+m+2){}
+  bipartiteMatch(int n , int m) : n(n) , m(m), vis(n+m+2) , match(n+m+2) , g(n+m+2){}
  
   void add(int x,int y){
     g[x].pb(y + n);
@@ -48,7 +51,7 @@ struct bipartite_match{ // 1 indice
   }
   // a vertex cover of a graph is a set of vertices that 
   // includes at least one endpoint of every edge of the graph.
-  vector<int> vertex_cover(){ // size == maximum matching
+  vector<int> vertexCover(){ // size == maximum matching
     solve();
     vector<int> res;
     fill(all(vis),false);
@@ -72,8 +75,8 @@ struct bipartite_match{ // 1 indice
   }
   // end of vertex cover
   // status: not tested
-  vector<int> independent_set(){// size == all - maximum matching
-    vi cover = vertex_cover();
+  vector<int> independentSet(){// size == all - maximum matching
+    vi cover = vertexCover();
     fill(all(vis),false);
     for(int x : cover)vis[x]=1;
     vi res;
@@ -84,7 +87,7 @@ struct bipartite_match{ // 1 indice
   // an edge cover of a graph is a set of edges such that every vertex of
   // the graph is incident to at least one edge of the set.
   //status: tested:
-  vector<pii> edge_cover(){ // size == number of not isolated vertices - maximum matching
+  vector<pii> edgeCover(){ // size == number of not isolated vertices - maximum matching
     solve();
     vi aux = match;
     vector<pii> res;

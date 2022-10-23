@@ -1,14 +1,15 @@
-/*
-* Description: Min-Cost Max-Flow: O(V^2E^2).
-* Vertices are labeled from 0 to n (inclusive).
-* Edge cost and capacities must fit int (flow and cost 
-* returned are long long).
-* Edge cost in network must not create an negative cost cycle		
-* Call mincost_maxflow to get the total flow and its cost (in this order). 
-* Individual edge flows can be retrieved in the graph. 
-* Note that flow will be negative in return edges.
-* Time: O(V^2E^2).
-*/
+/**
+ * Author: dadalto
+ * Description: Min-Cost Max-Flow: O(V^2E^2).
+ * Vertices are labeled from 0 to n (inclusive).
+ * Edge cost and capacities must fit int (flow and cost 
+ * returned are long long).
+ * Edge cost in network must not create an negative cost cycle		
+ * Call mincost_maxflow to get the total flow and its cost (in this order). 
+ * Individual edge flows can be retrieved in the graph. 
+ * Note that flow will be negative in return edges.
+ * Time: O(V^2E^2).
+ */
 namespace mcmf
 {
 struct edge

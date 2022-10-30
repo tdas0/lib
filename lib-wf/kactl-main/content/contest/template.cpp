@@ -10,7 +10,7 @@ using namespace std;
 typedef long long ll;
 typedef pair<int, int> pii;
 typedef vector<int> vi;
-std::mt19937 rng((int) std::chrono::steady_clock::now().time_since_epoch().count());
+mt19937 rng((int) chrono::steady_clock::now().time_since_epoch().count());
 #define Unique(v) sort(all(v));v.erase(unique(all(v)),v.end());
 // g++ -g a.cpp --std=c++17 -Wall -Wextra -Wno-unused-result -Wconversion -Wfatal-errors -o a.out
 // -fsanitize=undefined,address (dont abuse, slow compiling)

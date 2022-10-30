@@ -11,14 +11,11 @@ bool mark[N];
 vi pr;
 void crivo_segmentado(ll l,ll r){
 	//crivo(); jogando primos em pr
-  
 	for(ll i = l;i<=r;i++){
 		mark2[i-l] = i;
 		ans[i-l] = 1;
 	}
-
-	for(ll p : pr){
-	  
+	for(ll p : pr)
 		for(ll i = (l + p -1)/p * p ;i<=r;i+=p){
 			ll cnt =0;
 			while(mark2[i-l]%p==0){
@@ -27,12 +24,7 @@ void crivo_segmentado(ll l,ll r){
 			}
 			ans[i-l] = ans[i-l]*(cnt + 1)%M; // exemplo -> qtd de divisores de i
 		}
-	}
-	
-	for(ll i = l;i<=r;i++){
-	  if(mark2[i-l]!=1){//eh um primo > Sqrt
+	for(ll i = l;i<=r;i++)
+	  if(mark2[i-l]!=1)//eh um primo > Sqrt
 		ans[i-l] = ans[i-l] * (1 + 1) %M;    
-	  }
-	}
-  
 }

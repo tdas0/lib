@@ -9,7 +9,6 @@ struct bipartiteMatch{ // 1 indice
   vector<vi> g; vi vis , match;
   int ans=0;
   bipartiteMatch(int n , int m) : n(n) , m(m), vis(n+m+2) , match(n+m+2) , g(n+m+2){}
- 
   void add(int x,int y){
     g[x].pb(y + n);
     g[y + n].pb(x);
@@ -36,8 +35,6 @@ struct bipartiteMatch{ // 1 indice
     } while(haspath);
     return ans;
   }
-
-  // status: tested
   void dfs2(int v){
     vis[v] = 1;
     for(auto w : g[v]){
@@ -73,21 +70,12 @@ struct bipartiteMatch{ // 1 indice
     assert(sz(res)==solve());
     return res;
   }
-  // end of vertex cover
-  // status: not tested
-  vector<int> independentSet(){// size == all - maximum matching
-    vi cover = vertexCover();
-    fill(all(vis),false);
-    for(int x : cover)vis[x]=1;
-    vi res;
-    for(int i=1;i<=n+m;i++)if(!vis[i])res.pb(i);
-    assert(sz(res) == n - solve());
-    return res;
+  vector<int> independentSet(){
+    // todos menos os no vertexCover
   }
-  // an edge cover of a graph is a set of edges such that every vertex of
+  // set of edges such that every vertex of
   // the graph is incident to at least one edge of the set.
-  //status: tested:
-  vector<pii> edgeCover(){ // size == number of not isolated vertices - maximum matching
+  vector<pii> edgeCover(){ // size == # not isolated vertices - maximum matching
     solve();
     vi aux = match;
     vector<pii> res;
@@ -108,7 +96,4 @@ struct bipartiteMatch{ // 1 indice
     }
     return res;
   }
-
-  int matchL(int x){return (match[x] ? match[x] - n : 0);}
-  int matchR(int x){return match[x+n];}
 };

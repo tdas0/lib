@@ -38,6 +38,16 @@
 		Let $n,m$ be non-negative integers and $p$ a prime. Write $n=n_kp^k+...+n_1p+n_0$ and $m=m_kp^k+...+m_1p+m_0$. Then $\binom{n}{m} \equiv \prod_{i=0}^k\binom{n_i}{m_i} \pmod{p}$.
 
 	\subsection{Binomials}
+		\begin{align*}
+		\sum_{k \leq n} (-1)^k \binom{r}{k} = (-1)^n \binom{r-1}{n}\\
+		\sum_{j=0}^{m} \binom {n+j}{n} = \binom{n+m+1}{m}\\
+		\sum_{j = 0}^{n} \binom{j}{m} = \binom{n+1}{m+1} \\
+		\sum_{j=0}^{n} j \binom{n}{j} = n 2^{n-1} \\
+		\sum_{k} \binom{r}{k} \binom{s}{n-k} = \binom{r+s}{n} \\
+		\sum_{i=0}^{n} \binom{n}{i}^2 = \binom{2 n}{n} \\
+		\sum_{k=0}^{n} \binom{n-k}{k} = Fib(n+1)\\
+		\end{align*}
+		${E} [X^{c}]=\sum _{k=0}^{c}\left\{{c \atop k}\right\}n^{\underline {k}}p^{k}$ where $n^{\underline{k}}=n(n-1)\cdots(n-k+1)$.
 		\kactlimport{multinomial.h}
 
 \section{General purpose numbers}

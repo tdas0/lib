@@ -25,6 +25,7 @@ library by Naim, tdas and yan.silva
 | XX Open Cup, Grand Prix of Nanjing    | 2022/08/29    |  93  |     4/13     |
 | Grand Prix of Southeastern Europe     | 2022/09/07    |  69  |     7/14     |
 | ASC 40 (only naimss and yan.silva)    | 2022/09/19    |  31  |     7/10     |
+| NERC 2022-2023                        | 2022/10/31    |   7  |     9/14     |
 
 
 

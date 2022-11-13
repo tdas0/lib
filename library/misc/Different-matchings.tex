@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\begin{document}
+
+
+
+\subsection{Up to 1 failure}
+Greedy match on prefix, then try to see if suffix matches. Use Z function
+
+\subsection{Wildcard}
+One option is using FFT with complex numbers. Put $a_i = \cos(\alpha_i) + i \sin(\alpha_i), \quad \alpha_i = \frac{2 \pi A[i]}{26}$ and $b_i = \cos(\beta_i) - i \sin(\beta_i), \quad \beta_i = \frac{2 \pi B[m-i-1]}{26}$. Set 0 for wildcards.
+
+Another option is calculate the sum of the diffences of squares (square to negate the sign). For the wild card we have $a_i = 0$. So compute the sum of $a_i (a_i - b_j)^2 = a_i^3 - 2(ai^2)(b_j) + a_i (b_j)^2$ and see if it equals 0. Use 2 FFTS for this. 
+
+If both pattern and string can have get the sum of $a_i \cdot b_j \cdot (a_i - b_j)^2$
+
+
+\end{document}

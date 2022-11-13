@@ -11,6 +11,7 @@
    Rounding is safe if $(\sum a_i^2 + \sum b_i^2)\log_2{N} < 9\cdot10^{14}$
    (in practice $10^{16}$; higher for random inputs).
    Otherwise, use long doubles/NTT/FFTMod.
+   For multivariate do x^i * y^j -> x^(i*(2*MAXN+1) + j)
  * Time: O(N \log N) with $N = |A|+|B|$ ($\tilde 1s$ for $N=2^{22}$)
  * Status: somewhat tested
  */

@@ -38,6 +38,7 @@ library by NaimSS, LiSA, MatheusLealV
 |-----------------------------|:-------------:|:----:|:------------:|
 | Latam Subregional 2020      | 2020/11/14    |   1  |     10/15    |
 | Latam Regionals 2020        | 2021/07/10    |   2  |     10/14    |
+| World Finals 2021           | 2022/11/10    |  64  |      4/12    |
 
 
 ## Training

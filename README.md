@@ -27,6 +27,8 @@ library by Naim, tdas and yan.silva
 | ASC 40 (only naimss and yan.silva)    | 2022/09/19    |  31  |     7/10     |
 | NERC 2022-2023                        | 2022/10/31    |   7  |     9/14     |
 | 2019 Asia Nanjing                     | 2022/11/15    |  17  |     7/11     |
+| XXII GP of Korea (naim, tdas and ber) | 2022/11/26    |  61  |     6/13     |
+| 2017 Ruyi Li (naim, tdas and arthur)  | 2022/12/16    |  26  |     7/11     |
 
 
 

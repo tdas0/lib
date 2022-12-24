@@ -1,5 +1,6 @@
 // finds the values that can be made with active elements
 // https://codeforces.com/contest/981/problem/E
+// sometimes is better to use d&c instead: https://codeforces.com/contest/303/submission/186565932
 
 int dp[N];
 int n;

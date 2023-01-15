@@ -3,7 +3,7 @@
 * capacidade infinita.
 * Complexity: O(Dinic)
 * Author: common knowledge
-* Status: tested on ASC1 B and XXII Open Cup. Grand Prix of Seoul problem I
+* Status: tested on ASC1 B and XXII Open Cup. Grand Prix of Seoul problem I and ABC 285-G
 * Dinic() precisa ter id na struct (modificar o addEdge pra receber(a,b,cap,id)) caso queira recuperar
 * os fluxos nas arestas. Deixar ids invalidos nas arestas extras e nas arestas do grafo residual
 * Resolve pra arestas que tem lower bound e upper bound o maxflow

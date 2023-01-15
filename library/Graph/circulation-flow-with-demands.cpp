@@ -28,9 +28,9 @@ public:
 	}
 	bool solve(){ // solve(s,t) se tiver source/sink
 		// forçar que possa circular o máximo de fluxo entre sink e source:
-		// flow.addEdge(t,s,inf,300000); 
+		// addEdge(t,s,0,inf,300000); 
 		int dx = 0 , sx = 0;
-		for(int i = 1 ; i <= n; i ++){
+		for(int i = 0 ; i <= n; i ++){ // 0-index?
 			if(h[i] < 0){
 				flow.addEdge(i,sink,-h[i],300000);
 				sx += -h[i];

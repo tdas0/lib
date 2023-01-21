@@ -10,7 +10,7 @@
  * 0 <= s,t < N
  * 0 <= u,v < N
  * 0 <= ci <= 1e7
- * Time: O(\log N)
+ * Time: O((K+M)\log N)
  * Status: stress-tested
  */
 

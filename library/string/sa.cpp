@@ -11,11 +11,11 @@
  * The \texttt{lcp} array contains longest common prefixes for
  * neighbouring strings in the suffix array:
  * \texttt{lcp[i] = lcp(sa[i], sa[i-1])}, \texttt{lcp[0] = 0}.
+ * !!!See lcpQueries for details on using it with RMQ!!!!
  * The input string must not contain any zero bytes.
  * Time: O(n \log n)
  * Status: stress-tested
  * Usefull debug:  rep(i,0,sz(s)+1)cout << sa.sa[i]<<" "<<s.substr(sa.sa[i])<<" "<<sa.lcp[i] << endl;
- * See lcp_queries for details on using it with RMQ
  */
 #pragma once
 

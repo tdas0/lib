@@ -197,7 +197,7 @@ According to one of generalizations of Cayley's formula, number of forests of x 
 \subsection{Euclid's} toda tripla de pitagoras primitiva pode ser gerada com 
     (n^2 - m^2, 2nm, n^2+m^2) onde n, m sao coprimos e um deles eh par
 \subsection{Wilson's} n eh primo quando (n-1)! mod n = n - 1
-\subsection{Mcnugget} Para dois coprimos x, y o maior inteiro que nao pode ser escrito como ax + by eh (x-1)(y-1)/2
+\subsection{Mcnugget - soma de coprimos} Para dois coprimos x, y o maior inteiro que nao pode ser escrito como ax + by eh $(x-1)(y-1)-1$ e tem $\frac{(x-1)(y-1)}{2}$ valores que é impossível escrever
 
 \subsection{Fermat} Se p eh primo entao $a^{p-1} mod p = 1$
 Se x e m tambem forem coprimos entao $x^k mod m = x^{(k mod(m-1))} mod m$
@@ -334,7 +334,7 @@ y = y0 - k * a'
 
 \subsection{Choromatic polynomial of a cycle}
 
-numero de modos de pintar um ciclo de tamanho n com K cores: $(k-1)^n + (-1)^n * ( k-1 )$
+numero de modos de pintar um ciclo de tamanho n com K cores: (k-1)^n + (-1)^n * ( k-1 )
 
 pode achar com expo tb se precisar...
 
@@ -345,20 +345,6 @@ Primos de Mersenne 2^n - 1
 Lista de Ns que resultam nos primeiros 41 primos de Mersenne:
 
 2; 3; 5; 7; 13; 17; 19; 31; 61; 89; 107; 127; 521; 607; 1.279; 2.203; 2.281; 3.217; 4.253; 4.423; 9.689; 9.941; 11.213; 19.937; 21.701; 23.209; 44.497; 86.243; 110.503; 132.049; 216.091; 756.839; 859.433; 1.257.787; 1.398.269; 2.976.221; 3.021.377; 6.972.593; 13.466.917; 20.996.011; 24.036.583;
-
-
-\subsection{Pythagorean triple}
-If $a^2 +  b^2 = c^2$ para (a,b,c) inteiros então para todo $m>n>0$ temos que $a = m^2 - n^2$, $b=2mn$, $c = m^2 + n^2$ é uma tripla válida
-
-\subsection{Number of lattice points in a ring}
-Se queremos achar o número de soluções para $a^2 + b^2 = n$, temos que fatorar $n$ e temos que $f(n) = 4b(n)$ com $b(n)$ sendo "multiplicativo" e $b(2^e) = 1$, $b(p^e) = 1 - (e mod 2)$ para $p mod 4 = 3$ e $b(p^e) = e+1$ para $p mod 4 = 1$.
-
-Isso vale porque 2 tem uma fatoração em número de gauss zuada (1+i)(1-i), todo primo 4k+3 não é fatorável em algo diferente dele mesmo e todo primo 4k+1 tem apenas uma fatoração em números de gauss $p=(a+bi)(a-bi)$
-
-\subsection{Solutions of $a^2+b^2+c^2 = n^2$}
-allowing zeros and distinguishing signs and order.
-
-$a(n) = 6 * b(n)$ if $n>0$ where b(n) is multiplicative with $b(2^e) = 1$, $b(p^e) = p^e$ if $p = 1 \ (mod 4)$, $b(p^e) = p^e + 2 * (p^e - 1) / (p - 1)$ if $p = 3 \  (mod 4)$. - Michael Somos, Nov 18 2011 - http://oeis.org/A016725
 
 
 

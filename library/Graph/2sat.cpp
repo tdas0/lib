@@ -5,6 +5,7 @@
  * Source: folklore
  * Description: Calculates a valid assignment to boolean variables a, b, c,... to a 2-SAT problem, so that an expression of the type $(a\|\|b)\&\&(!a\|\|c)\&\&(d\|\|!b)\&\&...$ becomes true, or reports that it is unsatisfiable.
  * Negated variables are represented by bit-inversions (\texttt{\tilde{}x}).
+ * Implies: // f-> j = ~f ou j
  * Usage:
  *  TwoSat ts(number of boolean variables);
  *  ts.either(0, \tilde3); // Var 0 is true or var 3 is false

@@ -1,3 +1,8 @@
+## Generating PDF
+First run `python3 replace_acentos.py` to replace the special carachters.
+Then go to latex folder and run `bash getlatex.sh`. Remember to update the path for the Library
+Also remove the non cpp files (.txt or .tex) because they will cause errors.
+
 ## Era 2
 Você beijaria Matheus Leal Viana?
 ================

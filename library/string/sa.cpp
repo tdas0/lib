@@ -1,5 +1,5 @@
 /**
- * Author: 罗穗骞, chilli
+ * Author: chilli
  * Date: 2019-04-11
  * License: Unknown
  * Source: Suffix array - a powerful tool for dealing with strings

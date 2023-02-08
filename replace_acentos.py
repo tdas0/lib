@@ -15,7 +15,7 @@ for ele in rslt:
         filedata = file.read()
     
     filedata = filedata.replace('é','eh').replace('ã','a').replace('á','a').replace('ç','c').replace('ê','e')
-    filedata = filedata.replace('ó','o').replace('ú','u').replace('Ã','A')
+    filedata = filedata.replace('ó','o').replace('ú','u').replace('Ã','A').replace('Ó','O').replace('É','E')
     filedata = filedata.replace('Ç','C').replace('õ','o').replace('í','i')
 
     

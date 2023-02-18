@@ -36,6 +36,12 @@ library by Naim, tdas and yan.silva
 | 2017 Ruyi Li (naim, tdas and arthur)  | 2022/12/16    |  26  |     7/11     |
 
 
+## OCPC training camp
+(Ranking is calculated based on onsite contestants)
+
+| Contest                               | Date          | Rank | Solved/Total |
+|---------------------------------------|:-------------:|:----:|:------------:|
+| Day 1 - anton contest 1               | 2023/02/18    |29/40 |     6/14     |
 
 namae wa?
 ================

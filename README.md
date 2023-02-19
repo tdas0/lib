@@ -42,6 +42,7 @@ library by Naim, tdas and yan.silva
 | Contest                               | Date          | Rank | Solved/Total |
 |---------------------------------------|:-------------:|:----:|:------------:|
 | Day 1 - anton contest 1               | 2023/02/18    |29/40 |     6/14     |
+| Day 2 - adamant contest 1             | 2023/02/19    |18/45 |     6/13     |
 
 namae wa?
 ================

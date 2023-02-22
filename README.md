@@ -44,6 +44,7 @@ library by Naim, tdas and yan.silva
 | Day 1 - anton contest 1               | 2023/02/18    |29/40 |     6/14     |
 | Day 2 - adamant contest 1             | 2023/02/19    |18/45 |     6/13     |
 | Day 4 - Jatin Garg  contest 1         | 2023/02/21    |33/53 |     6/13     |
+| Day 5 - Adam Gąsienica‑Samek          | 2023/02/22    |11/50 |     9/12     |
 
 
 namae wa?

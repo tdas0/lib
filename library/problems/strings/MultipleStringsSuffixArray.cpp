@@ -1,6 +1,8 @@
 // Sample example of a problem with an array A of strings
 // as input. Output is for each i the number of substrings Ai[L...R]
 // That appear in at least K strings including i.
+// Little Elephant and strings:
+// https://codeforces.com/problemset/problem/204/E
 
 struct SuffixArray {
 	vi sa, lcp;

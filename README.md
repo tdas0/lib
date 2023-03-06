@@ -24,7 +24,7 @@ library by Naim, tdas and yan.silva
 | SWERC 2021-2022                       | 2022/05/01    |  57  |     9/15     |
 | Asia Macau 2020                       | 2022/05/22    |  73  |     6/12     |
 | SEERC 2018                            | 2022/06/05    |  43  |     7/11     |
-| Maratona mineira 2022                 | 2022/06/16    |  2   |     14/14    |
+| Maratona mineira 2022                 | 2022/06/16    |   2  |     14/14    |
 | ASC 43                                | 2022/06/19    |  20  |     8/12     |
 | 2022 Jiangsu CPC                      | 2022/06/27    |  23  |     7/12     |
 | XX Open Cup, Grand Prix of Nanjing    | 2022/08/29    |  93  |     4/13     |
@@ -34,6 +34,7 @@ library by Naim, tdas and yan.silva
 | 2019 Asia Nanjing                     | 2022/11/15    |  17  |     7/11     |
 | XXII GP of Korea (naim, tdas and ber) | 2022/11/26    |  61  |     6/13     |
 | 2017 Ruyi Li (naim, tdas and arthur)  | 2022/12/16    |  26  |     7/11     |
+| SWERC 2022-2023                       | 2023/03/05    |   4  |     10/14    |
 
 
 ## OCPC training camp

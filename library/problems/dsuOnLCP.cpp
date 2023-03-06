@@ -3,8 +3,11 @@
  * This can be though as the reverse of a DFS on suffix tree
  * All leafs from [lSA,rSA] are equal from size [tamL,tamR]. For <tamL or >tamr
  * There will be more leafs added
+ * Also useful for sum of substrings
  * Source: NaimSS
- * Status: tested on https://codeforces.com/contest/1780/problem/G
+ * Status: tested on 1780G - delicious dessert
+ * Tested on EDU - borders:
+ * https://codeforces.com/edu/course/2/lesson/2/5/practice/contest/269656/problem/D
  */
 
 struct suffixInter{
@@ -61,8 +64,20 @@ vector<suffixInter> dsuOnLCP(string &s){
     return d.vec;
 }
 
+// Sum over Substrings:
 
-// for problem on codeforces:
+  auto vec = dsuOnLCP(s);
+  ll res=0;
+  for(auto [lsa,rsa,taml,tamr] : vec){
+    int occ = rsa-lsa+1;
+    res += 1ll * (tamr-taml+1) * f(occ);
+    // tamr-taml+1 different substrings all occur "occ" times
+    // for borders f(occ) = occ*(occ+1)/2
+  }
+  cout << res << endl;
+
+
+// Delicious dessert
   auto vec = dsuOnLCP(s);
 
   for(auto [lsa,rsa,taml,tamr] : vec){

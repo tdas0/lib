@@ -251,7 +251,7 @@ bool printa_listing(string sub, string file, bool extra = false) {
 	else printa_cuidado(sub);
 	cout << "}\n";
 
-	printa_arquivo_codigo(file, extra, get_hash_arquivo_full(file));
+	printa_arquivo_codigo(file, extra, (extra ? "-" : get_hash_arquivo_full(file)));
 	return true;
 }
 

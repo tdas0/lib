@@ -6,6 +6,10 @@
  * Description: Hash map with mostly the same API as unordered\_map, but \tilde
  * 3x faster. Uses 1.5x memory.
  * Initial capacity must be a power of 2 (if provided).
+ * Usage: 
+  auto it = dp.find(x);
+  if(it != dp.end())return it->ss;
+  * Tested on https://codeforces.com/gym/101064/problem/L
  */
 #pragma once
 

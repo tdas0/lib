@@ -12,7 +12,9 @@ library by Naim, tdas and yan.silva
 | Contest                     | Date          | Rank | Solved/Total |
 |-----------------------------|:-------------:|:----:|:------------:|
 | Fase zero da maratona       | 2022/09/24    |   1  |     12/12    |
-| Latam Subregional 2020      | 2022/10/08    |   1  |     13/14    |
+| Latam Subregional 2022      | 2022/10/08    |   1  |     13/14    |
+| Latam Regionals 2022        | 2023/03/18    |   3  |     10/13    |
+
 
 ## Training
 (Ranking is calculated based on onsite contestants)

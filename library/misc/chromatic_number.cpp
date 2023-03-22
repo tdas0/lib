@@ -2,7 +2,7 @@
  * Author: ??
  * Date: ??-??-??
  * License: ??
- * Source: own work
+ * Source: Yosopo library checker
  * Description: //compute the chromatic number (P(K)= \sum (-1)^{n - |i|} * ind(i)^k) of a graph
  * Time: O(n*2^N)
  * Status: stress-tested

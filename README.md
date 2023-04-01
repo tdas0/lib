@@ -37,6 +37,9 @@ library by Naim, tdas and yan.silva
 | XXII GP of Korea (naim, tdas and ber) | 2022/11/26    |  61  |     6/13     |
 | 2017 Ruyi Li (naim, tdas and arthur)  | 2022/12/16    |  26  |     7/11     |
 | SWERC 2022-2023                       | 2023/03/05    |   4  |     10/14    |
+| ASC 44 (naimss, tdas, defnotmee)      | 2023/03/24    |  49  |      6/10    |
+| 1st Universal Cup (naimss and tdas)   | 2023/03/31    |  18  |      8/12    |
+
 
 
 ## OCPC training camp

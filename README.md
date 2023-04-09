@@ -38,7 +38,9 @@ library by Naim, tdas and yan.silva
 | 2017 Ruyi Li (naim, tdas and arthur)  | 2022/12/16    |  26  |     7/11     |
 | SWERC 2022-2023                       | 2023/03/05    |   4  |     10/14    |
 | ASC 44 (naimss, tdas, defnotmee)      | 2023/03/24    |  49  |      6/10    |
-| 1st Universal Cup (naimss and tdas)   | 2023/03/31    |  18  |      8/12    |
+| UCUP Shangai      (naimss and tdas)   | 2023/03/31    |  18  |      8/12    |
+| La Salle-Pui Ching 2021 (naim+tdas)   | 2023/04/08    |   6  |      9/12    |
+
 
 
 

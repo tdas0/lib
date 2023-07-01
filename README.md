@@ -1,12 +1,37 @@
+## About this library
+It is a collection of algorithms and problem solution for ICPC contests. Some of them are very useful and others aren't, but we still found them interesting enough to put them here. It is recommended to filter most of this before printing to a competition.
+
 ## Generating PDF
 First run `python3 replace_acentos.py` to replace the special carachters.
 Then go to latex folder and run `bash getlatex.sh`. Remember to update the path for the Library
 Also remove the non cpp files (.txt or .tex) because they will cause errors.
 
+## Era 3 - A New Hope
+Inimigos do Tiago
+================
+Team: yan.silva, Ber, luiz.oda
+Alias: 2 IOI and a charismatic guy
+Tiago and Naim go from participants to enemy and co-coach, respectively
+
+## Onsite Contest
+| Contest                     | Date          | Rank | Solved/Total |
+|-----------------------------|:-------------:|:----:|:------------:|
+| Fase zero da maratona       | 2023/06/17    |   1  |     11/11    |
+
+## Training
+(Ranking is calculated based on onsite contestants)
+
+| Contest                               | Date          | Rank | Solved/Total |
+|---------------------------------------|:-------------:|:----:|:------------:|
+|2021 ICPC Asia Macau Regional Contest  | 2023/05/18    |  14  |     8/11     |
+|2022 ICPC Asia Hangzhou Regional       | 2023/05/29    |  18  |     9/12     |
+| GP of ainta                           | 2023/06/14    |  10  |     8/11     |
+
 ## Era 2
 Você beijaria Matheus Leal Viana?
 ================
-library by Naim, tdas and yan.silva
+Team: Naim, tdas and yan.silva
+Matheus Leal goes from participant to coach
 
 ## Onsite Contest
 | Contest                     | Date          | Rank | Solved/Total |
@@ -58,7 +83,7 @@ library by Naim, tdas and yan.silva
 namae wa?
 ================
 
-library by NaimSS, LiSA, MatheusLealV
+Team: NaimSS, LiSA, MatheusLealV
 ## Onsite Contest
 | Contest                     | Date          | Rank | Solved/Total |
 |-----------------------------|:-------------:|:----:|:------------:|

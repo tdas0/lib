@@ -10,7 +10,9 @@ Also remove the non cpp files (.txt or .tex) because they will cause errors.
 Inimigos do Tiago
 ================
 Team: yan.silva, Ber, luiz.oda
+
 Alias: 2 IOI and a charismatic guy
+
 Tiago and Naim go from participants to enemy and co-coach, respectively
 
 ## Onsite Contest
@@ -31,6 +33,7 @@ Tiago and Naim go from participants to enemy and co-coach, respectively
 Você beijaria Matheus Leal Viana?
 ================
 Team: Naim, tdas and yan.silva
+
 Matheus Leal goes from participant to coach
 
 ## Onsite Contest

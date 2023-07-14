@@ -28,6 +28,8 @@ Tiago and Naim go from participants to enemy and co-coach, respectively
 |2021 ICPC Asia Macau Regional Contest  | 2023/05/18    |  14  |     8/11     |
 |2022 ICPC Asia Hangzhou Regional       | 2023/05/29    |  18  |     9/12     |
 | GP of ainta                           | 2023/06/14    |  10  |     8/11     |
+| 2021 Grand Prix of Nanjing (ber+oda)  | 2023/07/05    |  169 |     5/13     |
+
 
 ## Era 2
 Você beijaria Matheus Leal Viana?
@@ -52,6 +54,7 @@ Matheus Leal goes from participant to coach
 | Colombia 2021                         | 2022/03/19    |  19  |    11/13     |
 | 2021 Jiangsu                          | 2022/03/26    |  69  |     6/12     |
 | SWERC 2021-2022                       | 2022/05/01    |  57  |     9/15     |
+| XXII Open Cup, Grand Prix of Nanjing  | 2022/05/15    |  69  |     7/13     |
 | Asia Macau 2020                       | 2022/05/22    |  73  |     6/12     |
 | SEERC 2018                            | 2022/06/05    |  43  |     7/11     |
 | Maratona mineira 2022                 | 2022/06/16    |   2  |     14/14    |
@@ -68,8 +71,7 @@ Matheus Leal goes from participant to coach
 | ASC 44 (naimss, tdas, defnotmee)      | 2023/03/24    |  49  |      6/10    |
 | UCUP Shangai      (naimss and tdas)   | 2023/03/31    |  18  |      8/12    |
 | La Salle-Pui Ching 2021 (naim+tdas)   | 2023/04/08    |   6  |      9/12    |
-
-
+| NAC 2023 (naim+tdas)                  | 2023/07/14    |   7  |      9/13    |
 
 
 ## OCPC training camp

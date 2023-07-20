@@ -1,6 +1,6 @@
 /**
  * Author: tdas
- * Complexity: $O(log^2N)$ ?
+ * Complexity: $O(Nlog^2N)$ ?
  * Description: Given a power series $A = \sum x^i \cdto A_i$, find $e^A mod x^{n+1}$ i,e. the first
  * $n$ terms of the exponential
  * Useful for generating functions. Example:

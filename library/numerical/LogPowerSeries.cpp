@@ -1,5 +1,12 @@
+/**
+* Author: tdas
+* Status: Tested on https://codeforces.com/gym/104118/problem/D and Yosopu
+* Description: Given a formal series $A = \sum x^i * A_i$, find the first $n$ terms of $B(x) = log(A(x))$
+* Useful for generating function problems. Remember to make $A_i = A_i \cdot ifat[i]$ if needed!
+*/
+
 vl log(vl A , int n){
-	assert(sz(A) != 0 && A[0] == 1);
+	assert(sz(A) >= n && A[0] == 1);
 	vl P(n,0) , ans(n,0);
 	vl fat(n,1);
 	for(int i = 1; i < n ; i ++){

@@ -3,6 +3,7 @@
  * aut[i][c] -> next position if on position 'i' and adding the c-th character 
  * Assumes the first character is 'a', next 'b'...
  * Tested on https://codeforces.com/group/q6XD0oW97M/contest/274944/problem/B
+ * Tested on 104003/problem/K
  */
  
  // build prefix function

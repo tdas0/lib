@@ -5,6 +5,8 @@
  * Source: https://github.com/spaghetti-source/algorithm/blob/master/graph/arborescence.cc
  * Description: Edmonds' algorithm for finding the weight of the minimum spanning
  * tree/arborescence of a directed graph, given a root node. If no MST exists, returns -1.
+ * For Ununroteed you can add a virtual node to everyone with cost infinity.
+ * DOES NOT STORE THE EDGES OF TREE
  * Time: O(E \log V)
  * Status: Stress-tested, also tested on NWERC 2018 fastestspeedrun
  */

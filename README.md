@@ -72,7 +72,7 @@ Matheus Leal goes from participant to coach
 | UCUP Shangai      (naimss and tdas)   | 2023/03/31    |  18  |      8/12    |
 | La Salle-Pui Ching 2021 (naim+tdas)   | 2023/04/08    |   6  |      9/12    |
 | NAC 2023 (naim+tdas)                  | 2023/07/14    |   7  |      9/13    |
-
+| NCPC preliminares 2021 (naim+yan)     | 2023/08/18    |  15  |      8/12    |
 
 ## OCPC training camp
 (Ranking is calculated based on onsite contestants)

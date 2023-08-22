@@ -9,7 +9,9 @@
 * Resolve pra arestas que tem lower bound e upper bound o maxflow
 * consegue resolver também pra demanda nos nós, h[x] representa a demanda do nó x
 * Consegue resolver para mincost.
-* Para mincost-maxflow primeiro ache o fluxo máximo m. Depois adicionar edge: (source,sink,lower = m,upper = m,custo = 0)
+* Para mincost-maxflow primeiro ache o fluxo máximo m. Depois adicionar edge: (sink,source,lower = m,upper = m,custo = 0). 
+* Aparentemente outra opcao eh colocar aresta s'->s e t->t' com cap = inf e custo 0. 
+* See MCF - https://codeforces.com/contest/1766/problem/F
 */
 
 

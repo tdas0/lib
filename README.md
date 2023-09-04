@@ -19,6 +19,7 @@ Tiago and Naim go from participants to enemy and co-coach, respectively
 | Contest                     | Date          | Rank | Solved/Total |
 |-----------------------------|:-------------:|:----:|:------------:|
 | Fase zero da maratona       | 2023/06/17    |   1  |     11/11    |
+| Fase subregional            | 2023/09/02    |   2  |     12/13    |
 
 ## Training
 (Ranking is calculated based on onsite contestants)
@@ -74,6 +75,7 @@ Matheus Leal goes from participant to coach
 | NAC 2023 (naim+tdas)                  | 2023/07/14    |   7  |      9/13    |
 | Asia Nanjing 2022                     | 2023/08/12    |  54  |      8/13    |
 | NCPC preliminares 2021 (naim+yan)     | 2023/08/18    |  15  |      8/12    |
+| COMPFEST 15  (naim+yan)               | 2023/09/04    |  29  |     11/13    |
 
 ## OCPC training camp
 (Ranking is calculated based on onsite contestants)

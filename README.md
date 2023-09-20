@@ -77,6 +77,7 @@ Matheus Leal goes from participant to coach
 | NCPC preliminares 2021 (naim+yan)     | 2023/08/18    |  15  |      8/12    |
 | COMPFEST 15  (naim+yan)               | 2023/09/04    |  29  |     11/13    |
 | 2019 ICPC Asia Yinchuan Regional      | 2023/09/13    |  22  |     10/14    |
+| ECNA 2019   (naim + tdas)             | 2023/09/19    |   4  |      9/11    |
 
 ## OCPC training camp
 (Ranking is calculated based on onsite contestants)

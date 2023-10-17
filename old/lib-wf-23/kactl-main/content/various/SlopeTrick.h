@@ -1,11 +1,13 @@
-/*
- * Description: keep the value of a function while adding functions such as
- * g(x) = s|x-v|, g(x) = max(0,x-v)*s , g(x) = max(0,v-x)*s
- * Make f(x) <- f(x-a)
- * Make f(x) = min(f(Y) | Y <= x)
- * Make f(x) = min(f(Y) | Y >= x)
- * Source: https://github.com/ei1333/library/blob/master/structure/others/generalized-slope-trick.hpp
- * Complexity: $O(\logN)$ amortized
+/**
+ * Author: ei1333
+ * License: CC0
+ * Description: Keep the value of a function while adding functions such as
+ *  g(x) = s|x-v|, g(x) = max(0,x-v)*s , g(x) = max(0,v-x)*s
+ *  Make f(x) <- f(x-a)
+ *  Make f(x) = min(f(Y) | Y <= x)
+ *  Make f(x) = min(f(Y) | Y >= x)
+ * Time: O(logN) amortized
+ * Status: Tested
  */
 
 struct SlopeTrick {

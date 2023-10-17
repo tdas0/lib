@@ -1,13 +1,13 @@
 /**
  * Author: Emanuel (UFMG)
  * License: CC0
- * Description: Match every element from A to B so that there is no pair x \in A
- * and y \in B and x not paired with y s.t. y prefers x and x prefers y.
+ * Description: Match every element from A to B so that there is no pair x in A
+ * and y in B and x not paired with y s.t. y prefers x and x prefers y.
  * a[i] has the elements of Bsorted by preference of i,
  * b[j] elements of A sorted by preference of j. |A| <= |B|.
  * Retorna um vetor v de tamanho |A| onde v[i] guarda o match de i
  * Status: Tested on 
- * Complexity: $O(|A||B|)$
+ * Time: O(AB)
  */
 
 vector<int> stable_marriage(vector<vector<int>> &a, vector<vector<int>> &b) {

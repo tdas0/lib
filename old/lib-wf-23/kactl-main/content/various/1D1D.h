@@ -3,13 +3,13 @@
  * License: CC0
  * Description: Let w(i,j) be the cost function.
  * The required condition is the quadrangle inequality: for all i<=j, w(i,j)+w(i+1,j+1)<=w(i+1,j)+w(i,j+1)
- * it's easier to just list out a few values of w and check then prove.
+ * its easier to just list out a few values of w and check then prove.
  * dp[x]=min(dp[k]+w(k,x)) for all k from 0 to x-1.
  * Let k(x) be the optimal index for dp(x).
  * Then for all i<=j, k(i)<=k(j) because of the quadrangle inequality
  * If we can't use CHT for this kind of DP optimization, May try this
  * Status: Tested on 101981B
- * Complexity: $O(N \logN)$
+ * Time: O(NlogN)
  */
 
 dp[0] = 0;

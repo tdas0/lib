@@ -3,7 +3,7 @@
  * Description: Edge Cover. Requires to use fast kuhn beforehand
  * Returns the set of edges such that every vertex of the graph
  * the graph is incident to at least one edge of the set
- * size = # not isolated vertices - maximum matching
+ * size = number of not isolated vertices - maximum matching
  * Status: tested
  * Time: O(VE) but pretty fast actually. random shuffle?
  */

@@ -19,8 +19,8 @@ Tiago and Naim go from participants to enemy and co-coach, respectively
 | Contest                     | Date          | Rank | Solved/Total |
 |-----------------------------|:-------------:|:----:|:------------:|
 | Fase zero da maratona       | 2023/06/17    |   1  |     11/11    |
-| Fase subregional            | 2023/09/02    |   2  |     12/13    |
-| Fase nacional               | 2023/10/21    |   1  |     11/13    |
+| LATAM Subregional 2023      | 2023/09/02    |   2  |     12/13    |
+| LATAM Regionals 2023        | 2023/10/21    |   1  |     11/13    |
 
 ## Training
 (Ranking is calculated based on onsite contestants)

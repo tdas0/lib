@@ -1,54 +1,27 @@
 /**
- * Author: Simon Lindholm
- * Date: 2015-03-15
+ * Author: Arthurpd
  * License: CC0
- * Source: own work
  * Description: Self-explanatory methods for string hashing.
+ * Useful primes: 1e9 + 7,1e9 + 9, 998244353, 139, 137, 1e18 + 9
  * Status: stress-tested
  */
-#pragma once
-
-// Arithmetic mod 2^64-1. 2x slower than mod 2^64 and more
-// code, but works on evil test data (e.g. Thue-Morse, where
-// ABBA... and BAAB... of length 2^10 hash the same mod 2^64).
-// "typedef ull H;" instead if you think test data is random,
-// or work mod 10^9+7 if the Birthday paradox is not a problem.
-typedef uint64_t ull;
-struct H {
-	ull x; H(ull x=0) : x(x) {}
-	H operator+(H o) { return x + o.x + (x + o.x < x); }
-	H operator-(H o) { return *this + ~o.x; }
-	H operator*(H o) { auto m = (__uint128_t)x * o.x;
-		return H((ull)m) + (ull)(m >> 64); }
-	ull get() const { return x + !~x; }
-	bool operator==(H o) const { return get() == o.get(); }
-	bool operator<(H o) const { return get() < o.get(); }
-};
-static const H C = (ll)1e11+3; // (order ~ 3e9; random also ok)
-
-struct HashInterval {
-	vector<H> ha, pw;
-	HashInterval(string& str) : ha(sz(str)+1), pw(ha) {
-		pw[0] = 1;
-		rep(i,0,sz(str))
-			ha[i+1] = ha[i] * C + str[i],
-			pw[i+1] = pw[i] * C;
+struct hash_interval{
+	ll c, mod;
+	vector<ll> h, p;
+	hash_interval(const string &s, ll c, ll mod) 
+	: c(c), mod(mod), h(sz(s) + 1), p(sz(s) + 1)
+	{
+		p[0] = 1;
+		h[0] = 0;
+		for (int i = 0; i < sz(s); i++)
+		{
+			h[i + 1] = (c * h[i] + s[i]) % mod;
+			p[i + 1] = (c * p[i]) % mod;
+		}
 	}
-	H hashInterval(int a, int b) { // hash [a, b)
-		return ha[b] - ha[a] * pw[b - a];
+	// Returns hash of interval s[a...b] (where 0 <= a <= b < sz(s))
+	ll get(int a, int b)
+	{
+		return (h[b + 1] - ((h[a] * p[b - a + 1]) % mod) + mod) % mod;
 	}
 };
-
-vector<H> getHashes(string& str, int length) {
-	if (sz(str) < length) return {};
-	H h = 0, pw = 1;
-	rep(i,0,length)
-		h = h * C + str[i], pw = pw * C;
-	vector<H> ret = {h};
-	rep(i,length,sz(str)) {
-		ret.push_back(h = h * C + str[i] - pw * str[i-length]);
-	}
-	return ret;
-}
-
-H hashString(string& s){H h{}; for(char c:s) h=h*C+c;return h;}

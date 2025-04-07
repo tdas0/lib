@@ -6,7 +6,8 @@
  *  If costs can be negative, call setpi before maxflow, but note that negative cost cycles are not supported.
  *  To obtain the actual flow, look at positive values only.
  * Status: Tested on kattis mincostmaxflow
- * Time: Approximately O(E^2)
+ * Time: Time: O(F * (V + E) log V), where F is the total flow.
+ * In practice, performs near O(E^2) on sparse graphs with small capacities.
  */
 
 #include<bits/extc++.h>

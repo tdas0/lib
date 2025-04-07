@@ -2,7 +2,7 @@
 using namespace std;
 
 /*
-	Min-Cost Max-Flow: O(V^2E^2)
+	Min-Cost Max-Flow: $O(F V E)$ or $O(V^2E^2)$ in worst case if edge capacity is O(1).
 		Finds the maximum flow of minimum cost.
 
 	Constraints:

@@ -1,0 +1,30 @@
+// tested on CSES sliding window problems
+struct DequeWithStacks{
+    stack<pair<int,int>> in, out;
+    int op(int a,int b){
+        return a^b; // change to operations like +,min, or
+    }
+ 
+    void push(int x){
+        if(in.empty()) in.push({x, x});
+        else in.push({x, op(in.top().second, x)});
+    }
+    void pop(){
+        if(out.empty()){
+            while(!in.empty()){
+                int v = in.top().first;
+                in.pop();
+                if(out.empty()) out.push({v, v});
+                else out.push({v, op(v, out.top().second)});
+            }
+        }
+        out.pop();
+    }
+    int get(){
+        if(in.empty()) return out.top().second;
+        if(out.empty()) return in.top().second;
+        return op(out.top().second, in.top().second);
+    }
+ 
+};
+ 
